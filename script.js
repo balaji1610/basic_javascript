@@ -1,4 +1,4 @@
-//-----------  Array --------------   ST
+//-----------  Array --------------   START
 
 const array_01 = ["Alex", "Balaji", "Chitra"];
 
@@ -31,4 +31,54 @@ console.log(text.indexOf("Balaji"));
 console.log(text.includes("Balaji"));
 console.log(text.includes("Alex"));
 
-//-----------  End --------------   End
+//-----------   Array --------------   End
+
+// ---------- Object ------------  START
+
+const details = {
+  name: "Balaji",
+  country: "India",
+};
+
+console.log(
+  "Hello,Myname is " + details.name + " My Country Name Is " + details.country
+);
+
+console.log(`Hello ${details.name}`);
+
+//Object Array
+
+const details2 = {
+  actors: ["Rio", "Denver"],
+};
+
+console.log(`Hello ${details2.actors[1]}`);
+
+//Object  Function
+
+const age = {
+  DOY: 2000,
+
+  currentage: function () {
+    return this.DOY - 1994;
+  },
+};
+
+console.log(`${age.currentage()} Years Old`);
+
+//Object all
+
+const allDetails = {
+  Name: "Rio",
+  From: "Mumbai",
+  Friends: ["Denver", "Narobi", "Tokoyo"],
+
+  mydata: function (greetings) {
+    const data = `${greetings} My name is ${this.Name}, I am From ${this.From}, Please Meet to My Friends ${this.Friends[0]} and ${this.Friends[2]}`;
+
+    return data;
+  },
+};
+
+console.log(allDetails.mydata("Hello"));
+// ----------- Object ---------     END
