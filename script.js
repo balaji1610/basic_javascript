@@ -60,7 +60,7 @@ const age = {
   DOY: 2000,
 
   currentage: function () {
-    return this.DOY - 1994;
+    return 2022 - this.DOY;
   },
 };
 
