@@ -82,3 +82,27 @@ const allDetails = {
 
 console.log(allDetails.mydata("Hello"));
 // ----------- Object ---------     END
+
+//----- Loop -----------    START
+
+//If loop
+
+const election = function () {
+  const value = prompt("What is Your age For Election Vote", " ");
+
+  var decideage;
+
+  if (value > 18) {
+    decideage = `Your${value} Years Old Eligble For Vote`;
+  } else {
+    decideage = `Your${value} Years Old Not Eligble For Vote`;
+  }
+
+  window.alert(decideage);
+};
+
+document.querySelector(".if_condition").addEventListener("click", function () {
+  election();
+});
+
+//--------- Loop ---------    END
