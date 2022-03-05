@@ -139,4 +139,21 @@ for (let i = 0; i <= length_details - 1; i++) {
   );
 }
 
+document.querySelector(".demo").innerHTML = "Hello";
+
+//Switch
+
+let switch_value = "0";
+
+switch (switch_value) {
+  case "0":
+    console.log("You enter 0");
+    break;
+
+  case "1":
+    console.log("You enter 1");
+    break;
+  default:
+    console.log("Not");
+}
 //--------- Loop ---------    END
