@@ -112,4 +112,31 @@ document.querySelector(".if_condition").addEventListener("click", function () {
 for (let i = 0; i <= 10; i++) {
   console.log(i);
 }
+
+// For Condition with array
+
+var city = ["chennai", "madurai", "banglore", "delhli", "kerala"];
+
+var length = city.length;
+
+for (let i = 0; i <= length - 1; i++) {
+  console.log(`My Favourite City Name is ${city[i]}`);
+}
+
+// For Condition With Object
+var details_names = [
+  { Name: "Apple", Id: "123xx", Place: "Chennai" },
+  { Name: "Banana", Id: "123xx", Place: "Mumbai" },
+  { Name: "Cherry", Id: "123xx", Place: "Kovai" },
+  { Name: "Watermelon", Id: "123xx", Place: "Kerala" },
+];
+
+var length_details = details_names.length;
+
+for (let i = 0; i <= length_details - 1; i++) {
+  console.log(
+    `Welcome ${details_names[i].Name} Your ID: ${details_names[i].Id} Place:${details_names[i].Place} `
+  );
+}
+
 //--------- Loop ---------    END
