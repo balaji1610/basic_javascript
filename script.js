@@ -94,6 +94,8 @@ const election = function () {
 
   if (value > 18) {
     decideage = `Your${value} Years Old Eligble For Vote`;
+  } else if ((value = 0)) {
+    decideage = `Please Enter Your age`;
   } else {
     decideage = `Your${value} Years Old Not Eligble For Vote`;
   }
@@ -105,4 +107,9 @@ document.querySelector(".if_condition").addEventListener("click", function () {
   election();
 });
 
+// For loop
+
+for (let i = 0; i <= 10; i++) {
+  console.log(i);
+}
 //--------- Loop ---------    END
