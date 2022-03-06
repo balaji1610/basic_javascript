@@ -188,6 +188,26 @@ do {
   console.log(y);
   y++;
 } while (y <= 15);
+
+// Break(left condition)
+
+for (var x = 1; x <= 5; x++) {
+  if (x == 3) {
+    break;
+  }
+
+  console.log(x);
+}
+
+// Continue(omitted condition)
+
+for (var y = 1; y <= 5; y++) {
+  if (y == 3) {
+    continue;
+  }
+  console.log(y);
+}
+
 //--------- Loop ---------    END
 
 // ---------- Function -------------- START
