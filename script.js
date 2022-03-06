@@ -92,10 +92,8 @@ const election = function () {
 
   var decideage;
 
-  if (value > 18) {
+  if (value >= 18) {
     decideage = `Your${value} Years Old Eligble For Vote`;
-  } else if ((value = 0)) {
-    decideage = `Please Enter Your age`;
   } else {
     decideage = `Your${value} Years Old Not Eligble For Vote`;
   }
@@ -140,6 +138,14 @@ for (let i = 0; i <= length_details - 1; i++) {
 }
 
 document.querySelector(".demo").innerHTML = "Hello";
+
+// For Of
+
+const numbers = ["One", "Two", "Three", "Four", "Five"];
+
+for (const list of numbers) {
+  console.log(list);
+}
 
 //Switch
 
