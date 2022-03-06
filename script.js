@@ -162,4 +162,22 @@ switch (switch_value) {
   default:
     console.log("Not");
 }
+
+// While
+
+var x = 1;
+
+while (x <= 5) {
+  console.log(x);
+  x++;
+}
+
+// Do - while
+
+var y = 10;
+
+do {
+  console.log(y);
+  y++;
+} while (y <= 15);
 //--------- Loop ---------    END
