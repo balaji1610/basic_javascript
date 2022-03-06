@@ -2,7 +2,7 @@
 
 var grettings = "Good Morning";
 
-console.log("Hello," + grettings + "Have a Nice Day");
+console.log("Hello," + grettings + " Have a Nice Day");
 
 console.log(`Hello ${grettings} Have a Nice Day`);
 
@@ -220,5 +220,18 @@ var mark = 40;
 var result = mark > 40 ? "Pass" : "Fail";
 
 console.log(result);
+
+// Nullish coalescing operator
+
+const value2 = 0;
+const value3 = 1;
+// without Nullish
+const nullish_operator = value2 || value3;
+console.log(nullish_operator);
+
+//with Nulliesh Operator
+const nullish_operator_with = value2 ?? value3;
+
+console.log(nullish_operator_with);
 
 // ------------- Function --------------- END
