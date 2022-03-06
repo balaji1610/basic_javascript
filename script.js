@@ -233,5 +233,13 @@ console.log(nullish_operator);
 const nullish_operator_with = value2 ?? value3;
 
 console.log(nullish_operator_with);
+// Optional Chaining
 
+const optionalChaining = {
+  // Name: "balaji",
+};
+// without Optional Chaining
+console.log(optionalChaining.Name);
+// with Optional Chaining
+console.log(optionalChaining?.Name ?? "Wrong Keys");
 // ------------- Function --------------- END
