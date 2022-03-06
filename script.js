@@ -1,3 +1,11 @@
+// Template Strings
+
+var grettings = "Good Morning";
+
+console.log("Hello," + grettings + "Have a Nice Day");
+
+console.log(`Hello ${grettings} Have a Nice Day`);
+
 //-----------  Array --------------   START
 
 const array_01 = ["Alex", "Balaji", "Chitra"];
@@ -181,3 +189,28 @@ do {
   y++;
 } while (y <= 15);
 //--------- Loop ---------    END
+
+// ---------- Function -------------- START
+
+// Function Declartion
+
+function myself(myname) {
+  return "Hello " + myname;
+}
+
+console.log(myself("Balaji"));
+
+// Function Expression
+const myself2 = function (myname2) {
+  return `Hello ${myname2}`;
+};
+
+console.log(myself2("Rio"));
+
+// Arrow Function
+
+const myself3 = (myname3) => `Hello ${myname3}`;
+
+console.log(myself3("Denver"));
+
+// ------------- Function --------------- END
