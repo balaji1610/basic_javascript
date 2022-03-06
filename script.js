@@ -213,4 +213,12 @@ const myself3 = (myname3) => `Hello ${myname3}`;
 
 console.log(myself3("Denver"));
 
+// Ternary Operator
+
+var mark = 40;
+
+var result = mark > 40 ? "Pass" : "Fail";
+
+console.log(result);
+
 // ------------- Function --------------- END
