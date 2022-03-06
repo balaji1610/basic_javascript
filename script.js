@@ -233,6 +233,45 @@ const myself3 = (myname3) => `Hello ${myname3}`;
 
 console.log(myself3("Denver"));
 
+// Methods Of Function  -> START
+
+// Pass Multiple Argument Though Function with Object
+
+var countryDetails = function ({ countryName, population, captial }) {
+  return (
+    "I am From " +
+    countryName +
+    " My Country Ovarall Population in World " +
+    population +
+    "." +
+    captial +
+    " Is Captial Of India"
+  );
+};
+console.log(
+  countryDetails({
+    countryName: "India",
+    population: "130 Million",
+    captial: "Delhi",
+  })
+);
+// Pass Multiple Argument Though Function with array
+var countryDetails02 = function ([mycountry, ourpm]) {
+  return (
+    "My Country Name is " + mycountry + " Our Primeminister name is " + ourpm
+  );
+};
+console.log(countryDetails02(["India", "Modi"]));
+// Methods Of Function  -> END
+// Default Parameter
+
+var defaultParameter = function (name, says = "Good Morning") {
+  return "Hello " + name + "," + says;
+};
+console.log(defaultParameter("Balaji"));
+
+// Methods of Function  ->END
+
 // Ternary Operator
 
 var mark = 40;
