@@ -241,5 +241,22 @@ const optionalChaining = {
 // without Optional Chaining
 console.log(optionalChaining.Name);
 // with Optional Chaining
-console.log(optionalChaining?.Name ?? "Wrong Keys");
+console.log(optionalChaining?.Name ?? "You Enter Wrong Key");
+
+// Spread Opeator
+
+var arrayOne = ["Tiger", "Lion"];
+
+var arrayTwo = ["Rio", "Narobi", "Denver", "Professor"];
+
+console.log([...arrayOne, ...arrayTwo]);
+
+// list item
+
+const merge = [...arrayOne, ...arrayTwo];
+
+for (const list of merge) {
+  console.log(list);
+}
+
 // ------------- Function --------------- END
