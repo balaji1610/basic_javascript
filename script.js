@@ -318,4 +318,17 @@ for (const list of merge) {
   console.log(list);
 }
 
+// Call Back Function (A callback is a function passed as an argument to another function)
+
+function personalDetails(todayage) {
+  console.log("I am " + todayage + " Years Old ");
+}
+
+function currentAge(doy) {
+  var ageCaluate = 2020 - doy;
+  return personalDetails(ageCaluate);
+}
+
+currentAge("2000");
+
 // ------------- Function --------------- END
