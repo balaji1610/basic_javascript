@@ -331,4 +331,19 @@ function currentAge(doy) {
 
 currentAge("2000");
 
+// Higher Order Function (Pass Arugment(function))
+
+function morning() {
+  return "Hello Good Morning";
+}
+
+function day() {
+  return "Have A Nice Day";
+}
+
+function message(morning, day) {
+  return morning + " ," + day;
+}
+
+console.log(message(morning(), day()));
 // ------------- Function --------------- END
