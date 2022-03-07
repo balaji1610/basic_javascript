@@ -346,4 +346,34 @@ function message(morning, day) {
 }
 
 console.log(message(morning(), day()));
+
+// Promise
+
+function eligablevote() {
+  console.log("Success");
+}
+
+function noteligablevote() {
+  console.log("Fail");
+}
+
+let Promis = new Promise(function (myReslove, myReject) {
+  var yourAge = 28;
+
+  if (yourAge >= 18) {
+    myReslove();
+  } else {
+    myReject();
+  }
+});
+
+Promis.then(
+  function (value) {
+    eligablevote();
+  },
+  function (error) {
+    noteligablevote();
+  }
+);
+
 // ------------- Function --------------- END
