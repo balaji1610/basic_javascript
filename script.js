@@ -376,4 +376,34 @@ Promis.then(
   }
 );
 
+// Call(call() method, you can write a method that can be used on different objects.)
+
+const information = {
+  informationData: function () {
+    console.log(this.Name + " Is a " + this.Job);
+  },
+};
+
+const person1 = {
+  Name: "Balaji",
+  Job: "React Js Developer",
+};
+
+const person2 = {
+  Name: "Alex",
+  Job: "Angular JS Developer",
+};
+
+const person3 = {
+  Name: "Rio",
+  Job: "UI/UX Developer",
+};
+
+const objectcall = information.informationData;
+
+objectcall.call(person1);
+
+objectcall.call(person2);
+
+objectcall.call(person3);
 // ------------- Function --------------- END
