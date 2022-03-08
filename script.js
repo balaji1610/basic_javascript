@@ -461,3 +461,24 @@ bind2(...detailsOfArea02);
 bind3(...detailsOfArea03);
 
 // ------------- Function --------------- END
+
+// ------------ Scope -------     START
+
+// globalscopt (Variable declare in outerfunction  access in everywhere function inside and outside)
+var a = 1;
+
+function globalScope() {
+  console.log(a); // Inner Function
+}
+globalScope();
+console.log(a); // Outer Function
+
+// Local Scope(Variable declare in inner function access in only inside function not outer function)
+
+function localScope() {
+  var b = "Hello Javascript Developer";
+  console.log(b); //
+}
+localScope();
+console.log(b);
+// ------------- Scope ------- END
