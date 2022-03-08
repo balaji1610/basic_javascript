@@ -376,7 +376,7 @@ Promis.then(
   }
 );
 
-// Call(call() method, you can write a method that can be used on different objects.)
+// Call(call() method, you can write a method that can be used on different objects.The call() method takes arguments separately.)
 
 const information = {
   informationData: function () {
@@ -406,4 +406,46 @@ objectcall.call(person1);
 objectcall.call(person2);
 
 objectcall.call(person3);
+
+// Apply (apply() method, you can write a method that can be used on different objects.apply() method takes arguments as an array.)
+
+var employeeDetails = {
+  biodata: function (Company, district, state) {
+    console.log(
+      this.Name +
+        " is a " +
+        this.Job +
+        ",He is Working " +
+        Company +
+        ",He is From " +
+        district +
+        " at " +
+        state
+    );
+  },
+};
+
+var employee1 = {
+  Name: "Balaji",
+  Job: "React Js Developer",
+};
+
+var employee2 = {
+  Name: "Rio",
+  Job: "UI/UX Developer",
+};
+
+var employee3 = {
+  Name: "Alex",
+  Job: "Angular JS Developer",
+};
+
+var detailsOfArea01 = ["ZOHO", "Chennai", "Tamilnadu"];
+var detailsOfArea02 = ["TCS", "Banglore", "Karnataka"];
+var detailsOfArea03 = ["ZOHO", "Hydreabad", "Andhra Pradesh"];
+var objectapply = employeeDetails.biodata;
+
+objectapply.apply(employee1, detailsOfArea01);
+objectapply.apply(employee2, detailsOfArea02);
+objectapply.apply(employee3, detailsOfArea03);
 // ------------- Function --------------- END
