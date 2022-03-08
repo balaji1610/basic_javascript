@@ -448,4 +448,16 @@ var objectapply = employeeDetails.biodata;
 objectapply.apply(employee1, detailsOfArea01);
 objectapply.apply(employee2, detailsOfArea02);
 objectapply.apply(employee3, detailsOfArea03);
+
+// Bind bind() method, an object can borrow a method from another object.
+
+var bind = objectapply.bind(employee1);
+
+var bind2 = objectapply.bind(employee2);
+var bind3 = objectapply.bind(employee3);
+
+bind(...detailsOfArea01);
+bind2(...detailsOfArea02);
+bind3(...detailsOfArea03);
+
 // ------------- Function --------------- END
