@@ -570,3 +570,98 @@ var textLast03 = "Hello Developer ";
 console.log(textLast03.repeat(10));
 
 // ------------  Strings Tools --- END
+
+// -----  Array Tools -------- START
+
+//slice
+
+var arrayText = ["appple", "banana", "cherry", "graps", "mango"];
+
+var slice = arrayText.slice(0, 2);
+console.log(slice);
+
+//reverse
+
+console.log(arrayText.reverse());
+
+// concat
+
+var arrayName01 = ["a", "b", "c", "d", "e"];
+
+var arrayName02 = ["f", "g", "h"];
+
+console.log(arrayName01.concat(arrayName02));
+//alternative
+console.log(...arrayName01, ...arrayName02);
+
+// Foreach forEach() calls a function for each element in an array
+
+var arrayName03 = ["Rio", "Denver", "Alex", "Professor", "Tokoyo"];
+
+arrayName03.forEach(function (item, index) {
+  console.log(`${index} For ${item}`);
+});
+
+// Filter
+
+var arrayName04 = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50];
+
+var filterMethod = arrayName04.filter(function (numbers) {
+  return numbers > 30;
+});
+
+console.log(filterMethod);
+
+// Reduce The reduce() method executes a reducer function for array element.
+
+const arrayName05 = [1, 2, 3, 4, 5];
+
+const reduceMethod = arrayName05.reduce(function (acc, current) {
+  return acc + current;
+});
+
+console.log(reduceMethod);
+
+// Min and Max
+
+// MinValue
+
+var arrayName06 = [5, 10, 15, 20, 25];
+
+const minValue = arrayName06.reduce(function (acc, value) {
+  if (acc < value) {
+    return acc;
+  } else {
+    return value;
+  }
+});
+
+console.log(minValue);
+
+// Max value
+const maxValue = arrayName06.reduce(function (acc, current) {
+  if (acc > current) {
+    return acc;
+  } else {
+    return current;
+  }
+});
+
+console.log(maxValue);
+
+//How to fill empty Array
+
+var dataarray = [10, 20, 30, 40, 50];
+
+var emptyarray = [100, 200, 300, 400, 500];
+
+var pushArray = dataarray.filter(function (numbers) {
+  return numbers < 30;
+});
+for (pushArrayNew of pushArray) {
+  emptyarray.push(pushArrayNew);
+}
+
+console.log(emptyarray);
+
+// ---------- Array Tools --------- END
