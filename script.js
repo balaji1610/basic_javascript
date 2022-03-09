@@ -480,5 +480,93 @@ function localScope() {
   console.log(b); //
 }
 localScope();
-console.log(b);
+// console.log(b); // defined
 // ------------- Scope ------- END
+
+// --------- Strings Tools ----- START
+
+// indexof
+
+var index01 = "Hello Balaji How Are YOu Balaji?";
+
+console.log(index01.indexOf("Balaji")); // First Match return
+// lastindexof
+console.log(index01.lastIndexOf("Balaji")); // Last Match return
+// slice
+console.log(index01.slice("13", "20"));
+
+console.log(index01.slice(-7));
+
+//tolowercase
+
+console.log(index01.toLowerCase());
+
+// touppercase
+
+console.log(index01.toUpperCase());
+
+//trim
+
+var text2 = "  Hello World";
+console.log(text2.trim()); // Remove Spaces
+
+// Replace
+
+var text3 = "Rio Is a ReactJS Developer";
+
+console.log(text3.replace("ReactJS", "AngularJS"));
+
+// Global Replace
+
+var text4 = "Hello Denver, How are you Denver ?";
+
+console.log(text4.replace(/Denver/g, "Professor"));
+
+// startswith() endsWith() returns true if a string ends with a specified string,
+
+var text5 = "Rio Is a ReactJS Developer";
+
+console.log(text5.startsWith("Rio"));
+
+console.log(text5.startsWith("Is"));
+
+console.log(text5.endsWith("Developer"));
+
+console.log(text5.endsWith("ReactJS"));
+
+// Split
+
+var text6 = "Hello Balaji How are you doing";
+
+var myArray = text6.split(" ");
+
+console.log(myArray);
+
+console.log(myArray[1]);
+
+// Join join() returns an array as a string
+
+var fruitsList = ["Apple", "Orange", "Cherry", "Mango"];
+
+console.log(fruitsList.join(" and "));
+
+// Pad Start and Pad End The padStart() method pads a string with another string
+
+var textLast = " Balaji How are You Doing ?";
+
+console.log(textLast.length);
+
+console.log(textLast.padStart(32, "Hello"));
+
+var textLast02 = "How are ";
+console.log(textLast02.length);
+
+console.log(textLast02.padEnd(13, "You ?"));
+
+// Repeat
+
+var textLast03 = "Hello Developer ";
+
+console.log(textLast03.repeat(10));
+
+// ------------  Strings Tools --- END
