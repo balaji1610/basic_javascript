@@ -665,3 +665,28 @@ for (pushArrayNew of pushArray) {
 console.log(emptyarray);
 
 // ---------- Array Tools --------- END
+
+
+// ----------- SetIntervel & SetTimeout ---- START
+
+// setTimeout execute function just one time
+// setInterval execute function unlimited times
+
+
+var setTime = setTimeout (setMyFunction,1000);
+
+function setMyFunction(){
+
+  document.getElementById("timeout").innerHTML =  "<p>Hello I am SetTimeout Method</p>";
+}
+
+
+
+// var setInter = setInterval(setMyFunction2V,1000);
+
+
+// function setMyFunction2V(){
+//   document.getElementById("inter").innerHTML +=  "<p> Hello I am SetIntervel Method</p>";
+
+// }
+// ----------- SetIntervel & SetTimeout ---- END
