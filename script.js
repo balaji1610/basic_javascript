@@ -666,24 +666,19 @@ console.log(emptyarray);
 
 // ---------- Array Tools --------- END
 
-
 // ----------- SetIntervel & SetTimeout ---- START
 
 // setTimeout execute function just one time
 // setInterval execute function unlimited times
 
+var setTime = setTimeout(setMyFunction, 1000);
 
-var setTime = setTimeout (setMyFunction,1000);
-
-function setMyFunction(){
-
-  document.getElementById("timeout").innerHTML =  "<p>Hello I am SetTimeout Method</p>";
+function setMyFunction() {
+  document.getElementById("timeout").innerHTML =
+    "<p>Hello I am SetTimeout Method</p>";
 }
 
-
-
 // var setInter = setInterval(setMyFunction2V,1000);
-
 
 // function setMyFunction2V(){
 //   document.getElementById("inter").innerHTML +=  "<p> Hello I am SetIntervel Method</p>";
@@ -692,18 +687,16 @@ function setMyFunction(){
 
 // Image Change Automatic
 
-var imageSources = ["https://reactjs.org/logo-og.png", "https://railsware.com/blog/wp-content/uploads/2018/09/2400%D1%851260-rw-blog-node-js.png","https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"]
-
+var imageSources = ["images/css.jpg", "images/Js.png", "images/html.png"];
+var imageDescription = ["CSS", "JAVASCRIPT", "HTML"];
 var index = 0;
-setInterval (function(){
+setInterval(function () {
   if (index === imageSources.length) {
     index = 0;
   }
   document.getElementById("image").src = imageSources[index];
+  document.getElementById("texts").innerHTML = imageDescription[index];
   index++;
-} , 2000);
-
-
-
+}, 2000);
 
 // ----------- SetIntervel & SetTimeout ---- END

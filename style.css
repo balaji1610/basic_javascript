@@ -6,7 +6,12 @@
   background-color: #cad5e2;
 }
 
-#inter{
+#inter {
+  color: red;
+}
+#texts {
+  text-align: center;
+  font-size: 20px;
 
-  color:red;
+  color: #0288d1;
 }
