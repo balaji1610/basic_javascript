@@ -689,4 +689,21 @@ function setMyFunction(){
 //   document.getElementById("inter").innerHTML +=  "<p> Hello I am SetIntervel Method</p>";
 
 // }
+
+// Image Change Automatic
+
+var imageSources = ["https://reactjs.org/logo-og.png", "https://railsware.com/blog/wp-content/uploads/2018/09/2400%D1%851260-rw-blog-node-js.png","https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png"]
+
+var index = 0;
+setInterval (function(){
+  if (index === imageSources.length) {
+    index = 0;
+  }
+  document.getElementById("image").src = imageSources[index];
+  index++;
+} , 2000);
+
+
+
+
 // ----------- SetIntervel & SetTimeout ---- END
