@@ -369,7 +369,7 @@ let Promis = new Promise(function (myReslove, myReject) {
 
 Promis.then(
   function (value) {
-    eligablevote();
+eligablevote();
   },
   function (error) {
     noteligablevote();
@@ -678,13 +678,19 @@ function setMyFunction() {
     "<p>Hello I am SetTimeout Method</p>";
 }
 
-// var setInter = setInterval(setMyFunction2V,1000);
 
-// function setMyFunction2V(){
-//   document.getElementById("inter").innerHTML +=  "<p> Hello I am SetIntervel Method</p>";
 
-// }
+/*
+var setInter = setInterval(setMyFunction2V,1000);
 
+
+function setMyFunction2V(){
+ document.getElementById("inter").innerHTML +=  "<p> Hello I am SetIntervel Method</p>";
+
+
+}
+
+*/
 // Image Change Automatic
 
 var imageSources = ["images/css.jpg", "images/Js.png", "images/html.png"];
