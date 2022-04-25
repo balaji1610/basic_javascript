@@ -157,7 +157,7 @@ for (const list of numbers) {
 
 //Switch
 
-let switch_value = "0";
+let switch_value = "2";
 
 switch (switch_value) {
   case "0":
