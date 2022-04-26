@@ -711,7 +711,15 @@ setInterval(function () {
 // ----------- Create Element --------- START 
 
 
-/* Reference Site: https://www.w3schools.com/jsref/met_document_createelement.asp */
+/* 
+Reference Site: https://www.w3schools.com/jsref/met_document_createelement.asp 
+
+append() method inserts a set of Node objects or DOMString objects after the last child of the Element 
+DOMString objects are inserted as equivalent Text nodes.
+
+*/
+
+
 
 const  modelFunction = function()
 {
