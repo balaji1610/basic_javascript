@@ -746,6 +746,4 @@ document.querySelector(".createElements").addEventListener("click", function () 
 
 
 
-
-
 //------------------- Create Element ------------- END
