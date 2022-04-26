@@ -706,3 +706,38 @@ setInterval(function () {
 }, 2000);
 
 // ----------- SetIntervel & SetTimeout ---- END
+
+
+// ----------- Create Element --------- START 
+
+
+/* Reference Site: https://www.w3schools.com/jsref/met_document_createelement.asp */
+
+const  modelFunction = function()
+{
+
+const model = document.createElement('div');
+  model.className = 'Model';
+  
+  const tag = document.createElement('p');
+  
+  tag.className="tagP";
+  
+  tag.textContent="Hello Create Element";
+ 
+model.append(tag);
+
+  document.body.appendChild(model);
+}
+
+
+document.querySelector(".createElements").addEventListener("click", function () {
+  modelFunction();
+});
+
+
+
+
+
+
+//------------------- Create Element ------------- END
