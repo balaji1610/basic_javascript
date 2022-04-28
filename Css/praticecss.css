@@ -73,3 +73,16 @@
 .floatright {
   float: right;
 }
+.gridTag {
+  display: grid;
+  /*  dev tools click grid */
+  grid: 70px / auto auto auto auto;
+  grid-gap: 10px;
+  padding-top: 90px;
+  align-items: baseline;
+}
+.gridAlign {
+  border: 1px solid #ffffff;
+  background-color: #2196f3;
+  padding: 10px;
+}
