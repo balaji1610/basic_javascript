@@ -1,0 +1,67 @@
+.praticeBody {
+  padding-top: 20px;
+}
+
+.list > ul > li {
+  display: inline;
+  margin: 1px;
+}
+.blackelement {
+  background-color: antiquewhite;
+  text-transform: uppercase;
+}
+.inlineelement {
+  background-color: antiquewhite;
+  text-transform: uppercase;
+}
+.positionStatic {
+  color: black;
+  background-color: aqua;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  font-weight: bold;
+  position: static;
+  left: 20px;
+  top: 100px;
+}
+.positionRelative {
+  color: black;
+  background-color: aqua;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  font-weight: bold;
+  position: relative;
+  left: 20px;
+  top: 100px;
+}
+
+.positionInital {
+  color: black;
+  background-color: aqua;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  font-weight: bold;
+  position: initial;
+  left: 20px;
+  top: 100px;
+}
+.positionAbsolute {
+  color: black;
+  background-color: aqua;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  font-weight: bold;
+  position: absolute;
+  left: 20px;
+  top: 100px;
+}
+.positionFixed {
+  color: black;
+  background-color: aqua;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  font-weight: bold;
+  position: fixed;
+  left: 20px;
+  top: 150px;
+}
