@@ -369,7 +369,7 @@ let Promis = new Promise(function (myReslove, myReject) {
 
 Promis.then(
   function (value) {
-eligablevote();
+    eligablevote();
   },
   function (error) {
     noteligablevote();
@@ -678,8 +678,6 @@ function setMyFunction() {
     "<p>Hello I am SetTimeout Method</p>";
 }
 
-
-
 /*
 var setInter = setInterval(setMyFunction2V,1000);
 
@@ -707,9 +705,7 @@ setInterval(function () {
 
 // ----------- SetIntervel & SetTimeout ---- END
 
-
-// ----------- Create Element --------- START 
-
+// ----------- Create Element --------- START
 
 /* 
 Reference Site: https://www.w3schools.com/jsref/met_document_createelement.asp 
@@ -719,31 +715,25 @@ DOMString objects are inserted as equivalent Text nodes.
 
 */
 
+const modelFunction = function () {
+  const model = document.createElement("div");
+  model.className = "Model";
 
+  const tag = document.createElement("p");
 
-const  modelFunction = function()
-{
+  tag.className = "tagP";
 
-const model = document.createElement('div');
-  model.className = 'Model';
-  
-  const tag = document.createElement('p');
-  
-  tag.className="tagP";
-  
-  tag.textContent="Hello Create Element";
- 
-model.append(tag);
+  tag.textContent = "Hello Create Element";
+
+  model.append(tag);
 
   document.body.appendChild(model);
-}
+};
 
-
-document.querySelector(".createElements").addEventListener("click", function () {
-  modelFunction();
-});
-
-
-
+document
+  .querySelector(".createElements")
+  .addEventListener("click", function () {
+    modelFunction();
+  });
 
 //------------------- Create Element ------------- END
