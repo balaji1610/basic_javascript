@@ -14,6 +14,7 @@
   background-color: antiquewhite;
   text-transform: uppercase;
 }
+
 .positionStatic {
   color: black;
   background-color: aqua;
@@ -64,4 +65,11 @@
   position: fixed;
   left: 20px;
   top: 150px;
+}
+
+.floatleft {
+  float: left;
+}
+.floatright {
+  float: right;
 }
