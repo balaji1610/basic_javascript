@@ -147,3 +147,10 @@
   left: 70px;
   background-color: red;
 }
+.imagZindex {
+  width: 100px;
+  height: 75px;
+  position: absolute;
+  top: 827px;
+  z-index: -1;
+}
