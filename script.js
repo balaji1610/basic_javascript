@@ -764,4 +764,8 @@ function mOver(argument) {
 function mOut(argument) {
   argument.innerHTML = "Mouse Over Me";
 }
+
+function removeElement() {
+  document.getElementById("removeElement").remove();
+}
 // ------------------- DOM JS -------------------- END
