@@ -756,4 +756,12 @@ function changetextV2() {
 function clickEvent() {
   alert("Onclick Event");
 }
+
+function mOver(argument) {
+  argument.innerHTML = "Hovered";
+}
+
+function mOut(argument) {
+  argument.innerHTML = "Mouse Over Me";
+}
 // ------------------- DOM JS -------------------- END
