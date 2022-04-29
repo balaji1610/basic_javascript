@@ -737,3 +737,13 @@ document
   });
 
 //------------------- Create Element ------------- END
+
+// ------------------ DOM JS ------------------ START
+
+document.getElementById("imageDOM").src =
+  "https://static.javatpoint.com/blog/images/mern-stack.png";
+
+document.getElementById("cssDOM").style.color = "red";
+document.getElementById("cssDOM").style.backgroundColor = "green";
+
+// ------------------- DOM JS -------------------- END
