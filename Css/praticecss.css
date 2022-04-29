@@ -1,3 +1,5 @@
+/* CSS REFERENCE: https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_background-blend-mode*/
+
 .praticeBody {
   padding-top: 20px;
 }
@@ -130,4 +132,18 @@
 }
 .psudoElement::before {
   content: "Hello ";
+}
+
+.paddingMove {
+  color: #000000;
+  font-weight: bold;
+  padding-left: 70px;
+  background-color: red;
+}
+.positionMove {
+  color: #000000;
+  position: absolute;
+  font-weight: bold;
+  left: 70px;
+  background-color: red;
 }
