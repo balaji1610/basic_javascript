@@ -80,9 +80,47 @@
   grid-gap: 10px;
   padding-top: 90px;
   align-items: baseline;
+  padding-bottom: 36px;
 }
 .gridAlign {
   border: 1px solid #ffffff;
   background-color: #2196f3;
   padding: 10px;
+}
+
+.navPartice {
+  /* border: 1px solid #000000; */
+  display: grid;
+  grid: 73px / auto auto;
+  padding-top: 30px;
+  align-items: baseline;
+  justify-content: space-around;
+  align-content: space-between;
+  background-color: #bbdefb;
+}
+.navContent {
+  color: #000000;
+}
+
+.navlist > li {
+  color: #000000;
+  display: inline;
+  margin: 27px;
+}
+.imageAvater {
+  border-radius: 41%;
+  height: 41px;
+  width: 42px;
+}
+.navAnchor {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navAnchor:hover {
+  color: rgb(255, 235, 59);
+  border: 1px solid red;
+  border-radius: 10%;
+  padding: 5px;
+  cursor: pointer;
 }
