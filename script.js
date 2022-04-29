@@ -746,4 +746,14 @@ document.getElementById("imageDOM").src =
 document.getElementById("cssDOM").style.color = "red";
 document.getElementById("cssDOM").style.backgroundColor = "green";
 
+function changetext(argument) {
+  argument.innerHTML = "Clicked";
+}
+function changetextV2() {
+  document.getElementById("changetextV2").innerHTML = "Clicked Version 2";
+}
+
+function clickEvent() {
+  alert("Onclick Event");
+}
 // ------------------- DOM JS -------------------- END
