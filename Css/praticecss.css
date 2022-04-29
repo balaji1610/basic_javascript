@@ -124,3 +124,10 @@
   padding: 5px;
   cursor: pointer;
 }
+
+.psudoElement::after {
+  content: " Good Morning";
+}
+.psudoElement::before {
+  content: "Hello ";
+}
