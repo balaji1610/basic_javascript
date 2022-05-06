@@ -768,4 +768,11 @@ function mOut(argument) {
 function removeElement() {
   document.getElementById("removeElement").remove();
 }
+
+document.getElementsByClassName("Domclass")[0].innerHTML = "Hello Class";
+
+document.getElementsByClassName("Domclass")[1].innerHTML = "Hello Class 01";
+
+document.getElementsByClassName("Domclass")[2].innerHTML = "Hello Class 02";
+
 // ------------------- DOM JS -------------------- END
