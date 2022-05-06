@@ -790,6 +790,6 @@ function Setimage() {
   document.getElementsByClassName("Setdom")[2].style.height = "120px";
 }
 
-document.getElementById("getURL").innerHTML = document.baseURI;
+document.getElementById("getURL").innerHTML = document.URL;
 
 // ------------------- DOM JS -------------------- END
