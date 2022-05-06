@@ -775,4 +775,19 @@ document.getElementsByClassName("Domclass")[1].innerHTML = "Hello Class 01";
 
 document.getElementsByClassName("Domclass")[2].innerHTML = "Hello Class 02";
 
+function Setimage() {
+  document.getElementsByClassName("Setdom")[0].innerHTML =
+    " !!!! Change Text !!!!";
+
+  document.getElementsByClassName("Setdom")[1].style.backgroundColor = "red";
+  document
+    .getElementsByClassName("Setdom")[2]
+    .setAttribute(
+      "src",
+      "https://railsware.com/blog/wp-content/uploads/2018/09/2400%D1%851260-rw-blog-node-js.png"
+    );
+  document.getElementsByClassName("Setdom")[2].style.width = "200px";
+  document.getElementsByClassName("Setdom")[2].style.height = "120px";
+}
+
 // ------------------- DOM JS -------------------- END
