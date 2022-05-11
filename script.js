@@ -101,9 +101,9 @@ const election = function () {
   var decideage;
 
   if (value >= 18) {
-    decideage = `Your${value} Years Old Eligble For Vote`;
+    decideage = `Your ${value} Years Old Eligble For Vote`;
   } else {
-    decideage = `Your${value} Years Old Not Eligble For Vote`;
+    decideage = `Your ${value} Years Old Not Eligble For Vote`;
   }
 
   window.alert(decideage);
@@ -163,7 +163,6 @@ switch (switch_value) {
   case "0":
     console.log("You enter 0");
     break;
-
   case "1":
     console.log("You enter 1");
     break;
@@ -677,18 +676,15 @@ function setMyFunction() {
   document.getElementById("timeout").innerHTML =
     "<p>Hello I am SetTimeout Method</p>";
 }
-
 /*
-var setInter = setInterval(setMyFunction2V,1000);
+var setInter = setInterval(setMyFunction2V, 1000);
 
-
-function setMyFunction2V(){
- document.getElementById("inter").innerHTML +=  "<p> Hello I am SetIntervel Method</p>";
-
-
+function setMyFunction2V() {
+  document.getElementById("inter").innerHTML +=
+    "<p> Hello I am SetIntervel Method</p>";
 }
-
 */
+
 // Image Change Automatic
 
 var imageSources = ["images/css.jpg", "images/Js.png", "images/html.png"];
