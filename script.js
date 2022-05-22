@@ -330,6 +330,30 @@ function currentAge(doy) {
 
 currentAge("2000");
 
+// function greeting(name) {
+//   alert("Hello " + name);
+// }
+
+// function processUserInput(callback) {
+//   var name = prompt("Please enter your name.");
+//   callback(name);
+// }
+
+// processUserInput(greeting);
+
+function currentage(age) {
+  console.log("second");
+  console.log(2021 - age);
+}
+
+function myyear(year) {
+  console.log("first");
+  var age = "1994";
+  year(age);
+}
+
+myyear(currentage);
+
 // Higher Order Function (Pass Arugment(function))
 
 function morning() {
@@ -657,6 +681,7 @@ var emptyarray = [100, 200, 300, 400, 500];
 var pushArray = dataarray.filter(function (numbers) {
   return numbers < 30;
 });
+var pushArrayNew;
 for (pushArrayNew of pushArray) {
   emptyarray.push(pushArrayNew);
 }
@@ -789,3 +814,15 @@ function Setimage() {
 document.getElementById("getURL").innerHTML = document.URL;
 
 // ------------------- DOM JS -------------------- END
+
+// ------------------------- ASYNC/AWAIT ---------- START
+
+const data = async () => {
+  const got = await fetch("https://jsonplaceholder.typicode.com/todos");
+
+  console.log(await got.json());
+};
+
+data();
+
+// ------------------------- ASYNC/AWAIT ---------- END
