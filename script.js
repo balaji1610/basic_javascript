@@ -20,24 +20,24 @@ const array_02a = ["tiger", "bear", "monkey"];
 const array_02b = ["Rio", "Denver", "Raqul"];
 const array_02c = ["tiger", "bear", "monkey"];
 
-array_02.push("Professor");
+array_02.push("Professor"); //Last Element Add
 
-array_02a.unshift("lion");
+array_02a.unshift("lion"); // First Element Add
 
-array_02b.pop();
-array_02c.shift();
+array_02b.pop(); // Last Element Remove
+array_02c.shift(); // First Element Remove
 
-console.log(array_02);
+console.log(array_02, "array_02");
 
-console.log(array_02a);
-console.log(array_02b);
-console.log(array_02c);
+console.log(array_02a, "array_02a");
+console.log(array_02b, "array_02b");
+console.log(array_02c, "array_02c");
 
 const text = "Hello Balaji What Are hell Doing ?";
 
 console.log(text.indexOf("Balaji"));
-console.log(text.includes("Balaji"));
-console.log(text.includes("Alex"));
+console.log(text.includes("Balaji")); // return true or false
+console.log(text.includes("Alex")); // return true or false
 
 // Map
 
@@ -54,6 +54,7 @@ console.log(Mapmethod, "Mapmethod");
 const Filtermethod = Mapdata.filter((elm) => elm !== "Balaji");
 
 console.log(Filtermethod, "Filtermethod");
+
 //-----------   Array --------------   End
 
 // ---------- Object ------------  START
@@ -167,7 +168,11 @@ document.querySelector(".demo").innerHTML = "Hello";
 const numbers = ["One", "Two", "Three", "Four", "Five"];
 
 for (const list of numbers) {
-  console.log(list);
+  console.log(list); // List Display Elements
+}
+
+for (const listElement in numbers) {
+  console.log(listElement); // List Display Index
 }
 
 //Switch
@@ -358,7 +363,7 @@ currentAge("2000");
 
 function currentage(age) {
   console.log("second");
-  console.log(2021 - age);
+  console.log(2022 - age);
 }
 
 function myyear(year) {
@@ -414,6 +419,26 @@ Promis.then(
   }
 );
 
+// console.log(Promis, "Promis");
+var xset = 5;
+var newPromismethod = new Promise(function (reslove, reject) {
+  setTimeout(() => {
+    if (xset <= 25) {
+      reslove("Promise Realsed");
+    } else {
+      reject("Reject Promise");
+    }
+  }, 1000);
+}).then(
+  function (resvalue) {
+    console.log(resvalue);
+  },
+  function (rejvalue) {
+    console.log(rejvalue);
+  }
+);
+
+console.log(newPromismethod, "newPromismethod");
 // Call(call() method, you can write a method that can be used on different objects.The call() method takes arguments separately.)
 
 const information = {
