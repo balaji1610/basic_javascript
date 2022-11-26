@@ -39,6 +39,21 @@ console.log(text.indexOf("Balaji"));
 console.log(text.includes("Balaji"));
 console.log(text.includes("Alex"));
 
+// Map
+
+const Mapdata = ["Balaji", "Alex", "Chitra"];
+
+const Mapmethod = Mapdata.map((item) => {
+  return item === "Chitra" ? "Correct" : "NotCorrect";
+});
+
+console.log(Mapmethod, "Mapmethod");
+
+// Filter
+
+const Filtermethod = Mapdata.filter((elm) => elm !== "Balaji");
+
+console.log(Filtermethod, "Filtermethod");
 //-----------   Array --------------   End
 
 // ---------- Object ------------  START
