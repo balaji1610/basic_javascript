@@ -428,7 +428,7 @@ var newPromismethod = new Promise(function (reslove, reject) {
     } else {
       reject("Reject Promise");
     }
-  }, 1000);
+  }, 2000);
 }).then(
   function (resvalue) {
     console.log(resvalue);
@@ -439,6 +439,27 @@ var newPromismethod = new Promise(function (reslove, reject) {
 );
 
 console.log(newPromismethod, "newPromismethod");
+
+let conditions = true;
+
+const proms = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (conditions) {
+      resolve("Hello");
+    } else {
+      reject("This condition faild");
+    }
+  }, 2000);
+});
+
+proms
+  .then((result) => {
+    console.log(result);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+
 // Call(call() method, you can write a method that can be used on different objects.The call() method takes arguments separately.)
 
 const information = {
@@ -858,9 +879,17 @@ document.getElementById("getURL").innerHTML = document.URL;
 // ------------------------- ASYNC/AWAIT ---------- START
 
 const data = async () => {
-  const got = await fetch("https://jsonplaceholder.typicode.com/todos");
+  const reponse = await fetch("https://jsonplaceholder.typicode.com/todos");
 
-  console.log(await got.json());
+  // console.log(reponse, "got");
+
+  if (!reponse.ok) {
+    console.log("----------------->Error");
+  } else {
+    const Detils = await reponse.json();
+    console.log(Detils);
+    return Detils;
+  }
 };
 
 data();
