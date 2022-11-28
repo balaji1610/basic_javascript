@@ -895,3 +895,20 @@ const data = async () => {
 data();
 
 // ------------------------- ASYNC/AWAIT ---------- END
+
+//------------- try/catch
+
+let valued = 7;
+
+try {
+  if (valued == 30) {
+    console.log("Correct");
+  } else if (valued >= 50) {
+    throw "GREATER THAN";
+  } else if (valued <= 50) {
+    throw "Less THAN";
+  }
+  // if (valued >= 50) if (valued <= 50) throw "Less THAN";
+} catch (err) {
+  console.log(err);
+}
