@@ -31,75 +31,84 @@
     <div class="container">
    
       <div class="col-md-12 col-sm-12">
-        <ul class="nav justify-content-end navalign">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./Css/indexCss.html"><button type="button" class="btn btn-outline-primary">CSS</button></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <h1 class="align">Basic Javascript</h1>
-        <button type="button" class="btn btn-primary if_condition">
-          If Condition
-        </button><br/>
-        <h1>Hello</h1><br/>
-        <button type="button" class="btn btn-primary createElements">
-     Create Element
-        </button> <br/>
-      <p  class="demo"></p>
-     <h1 id ="timeout"></h1>
-         <h1 id="inter"></h1>
-
-<!-- <img id="image" src="images/html.png" style="width:100px"> -->
-
-<div class="card" style="width: 18rem;">
-  <img id="image" src="images/html.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <p  id="texts" class="card-text">HTML</p>
+        <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <ul class="nav justify-content-end navalign">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./Css/indexCss.html"><button type="button" class="btn btn-outline-primary">CSS</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <h1 class="align">Basic Javascript</h1>
+          <button type="button" class="btn btn-primary if_condition">
+            If Condition
+          </button><br/>
+          <h1>Hello</h1><br/>
+          <button type="button" class="btn btn-primary createElements">
+       Create Element
+          </button> <br/>
+        <p  class="demo"></p>
+       <h1 id ="timeout"></h1>
+           <h1 id="inter"></h1>
+  
+  <!-- <img id="image" src="images/html.png" style="width:100px"> -->
+  
+  <div class="card" style="width: 18rem;">
+    <img id="image" src="images/html.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p  id="texts" class="card-text">HTML</p>
+    </div>
   </div>
+  <hr/>
+  <img>
+  <img id="imageDOM" class="imageDOM">
+  
+  <p id="cssDOM">DOM CSS </p>
+  
+  <h1 onclick ="changetext(this)">Click Here</h1>
+  <h1 onclick ="changetextV2()">Click Here</h1>
+  <p id="changetextV2"></p>
+  <button type="button" onclick="clickEvent()"class="btn btn-warning">Onclick Event</button>
+  <div class="Domhover">
+  <h1 class="Domclick" onmouseover="mOver(this)" onmouseout="mOut(this)" >Mouse Over Me </h1>
+  
+  </div>
+  
+  <h1 id="removeElement">Remove Element</h1>
+  
+  <button type="button" onclick="removeElement()" class="btn btn-danger">Remove Element</button>
+  
+  <hr/>
+  <h1 class="Domclass"></h1>
+  <p class="Domclass"></p>
+  <h1 class="Domclass"></h1>
+  <hr/>
+  <h1 class="Setdom">Set Attribute</h1>
+  <h6 class="Setdom">Set Attribute Color</h6>
+  <img class="Setdom" ></img>
+  <br/><br/>
+  <button type="button" class="btn btn-secondary" Onclick="Setimage()">Add Attribute</button>
+  <hr/>
+  <p id="getURL"></p>
+
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="d-flex justify-content-center  align-items-center">ffffffffffffffff</div>
 </div>
-<hr/>
-<img>
-<img id="imageDOM" class="imageDOM">
-
-<p id="cssDOM">DOM CSS </p>
-
-<h1 onclick ="changetext(this)">Click Here</h1>
-<h1 onclick ="changetextV2()">Click Here</h1>
-<p id="changetextV2"></p>
-<button type="button" onclick="clickEvent()"class="btn btn-warning">Onclick Event</button>
-<div class="Domhover">
-<h1 class="Domclick" onmouseover="mOver(this)" onmouseout="mOut(this)" >Mouse Over Me </h1>
-
-</div>
-
-<h1 id="removeElement">Remove Element</h1>
-
-<button type="button" onclick="removeElement()" class="btn btn-danger">Remove Element</button>
-
-<hr/>
-<h1 class="Domclass"></h1>
-<p class="Domclass"></p>
-<h1 class="Domclass"></h1>
-<hr/>
-<h1 class="Setdom">Set Attribute</h1>
-<h6 class="Setdom">Set Attribute Color</h6>
-<img class="Setdom" ></img>
-<br/><br/>
-<button type="button" class="btn btn-secondary" Onclick="Setimage()">Add Attribute</button>
-<hr/>
-<p id="getURL"></p>
+      </div>
 </div>
 
     </div>
   </body>
   <script type="module" src="./script.js"></script>
+
 </html>
 

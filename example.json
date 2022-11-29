@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Peter",
+    "employed id": "E231",
+    "present": true,
+    "numberofdayspresent": 29
+  },
+  {
+    "name": "Jhon",
+    "employed id": "E331",
+    "present": true,
+    "numberofdayspresent": 27
+  }
+]

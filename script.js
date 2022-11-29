@@ -912,3 +912,17 @@ try {
 } catch (err) {
   console.log(err);
 }
+
+const fff = async () => {
+  const reponse = await fetch("./example.json");
+
+  const Detilsdd = await reponse.json();
+
+  const mapData = Detilsdd.map((elm, index) => {
+    console.log(index);
+    return elm;
+  });
+  console.log(mapData);
+};
+
+fff();
