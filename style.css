@@ -35,3 +35,16 @@
   text-align: center;
   color: red;
 }
+.linkClass > a {
+  text-decoration: none;
+}
+.linkClass > a:hover {
+  color: red;
+  font-size: 18px;
+}
+.design_box {
+  display: flex;
+  flex-direction: row;
+  background-color: #cad5e2;
+  margin-top: 125px;
+}

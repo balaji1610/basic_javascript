@@ -938,6 +938,7 @@ const topic = async () => {
 
   let getSno;
   let getTopic;
+  let getLink;
   if (!res.ok) {
     console.log("---404 Error ---");
   } else {
@@ -953,8 +954,12 @@ const topic = async () => {
     getTopic = check.map((elm) => {
       return elm.Topic;
     });
+
+    getLink = check.map((elm) => {
+      return elm.Link;
+    });
   }
-  console.log(getSno, getTopic, "getSno");
+  console.log(getSno, getTopic, getLink, "getSno");
 
   if (!res.ok) {
     document.getElementById("topicno").innerHTML =
@@ -963,9 +968,12 @@ const topic = async () => {
     for (var y = 0; y <= getSno.length - 1; y++) {
       // let dataa = getTopic[y];
       // console.log(dataa, "dataa");
-
-      document.getElementById("topicno").innerHTML += getTopic[y] + "<br>";
       document.getElementById("getsno").innerHTML += getSno[y] + "<br>";
+
+      // document.getElementById("topicno").innerHTML += getTopic[y] + "<br>";
+
+      document.getElementById("link").innerHTML +=
+        "<a href='" + getLink[y] + "' >" + getTopic[y] + "<br/>" + "</a>";
     }
   }
 };

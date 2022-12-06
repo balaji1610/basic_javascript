@@ -1,58 +1,72 @@
 [
   {
     "SNO": "01",
-    "Topic": "JavaScript Fundamentals Part 1"
+    "Topic": "JavaScript Fundamentals Part 1",
+    "Link": "TopicsPage/Page01/JavascriptPart01.html"
   },
   {
     "SNO": "02",
-    "Topic": "JavaScript Fundamentals Part 2"
+    "Topic": "JavaScript Fundamentals Part 2",
+    "Link": ""
   },
   {
     "SNO": "03",
-    "Topic": "JavaScript in the Browser: DOM and Events Fundamentals"
+    "Topic": "JavaScript in the Browser: DOM and Events Fundamentals",
+    "Link": ""
   },
   {
     "SNO": "04",
-    "Topic": "How JavaScript Works Behind the Scenes"
+    "Topic": "How JavaScript Works Behind the Scenes",
+    "Link": ""
   },
   {
     "SNO": "05",
-    "Topic": "Data Structures, Modern Operators and Strings"
+    "Topic": "Data Structures, Modern Operators and Strings",
+    "Link": ""
   },
   {
     "SNO": "06",
-    "Topic": "A Closer Look at Functions"
+    "Topic": "A Closer Look at Functions",
+    "Link": ""
   },
   {
     "SNO": "07",
-    "Topic": "Working With Arrays"
+    "Topic": "Working With Arrays",
+    "Link": ""
   },
   {
     "SNO": "08",
-    "Topic": "Numbers, Dates, Intl and Timers"
+    "Topic": "Numbers, Dates, Intl and Timers",
+    "Link": ""
   },
   {
     "SNO": "09",
-    "Topic": "Advanced DOM and Events"
+    "Topic": "Advanced DOM and Events",
+    "Link": ""
   },
   {
     "SNO": "10",
-    "Topic": "Object-Oriented Programming (OOP) With JavaScript"
+    "Topic": "Object-Oriented Programming (OOP) With JavaScript",
+    "Link": ""
   },
   {
     "SNO": "11",
-    "Topic": "Mapty App: OOP, Geolocation, External Libraries, and More!"
+    "Topic": "Mapty App: OOP, Geolocation, External Libraries, and More!",
+    "Link": ""
   },
   {
     "SNO": "12",
-    "Topic": "Asynchronous JavaScript: Promises, Async/Await, and AJAX"
+    "Topic": "Asynchronous JavaScript: Promises, Async/Await, and AJAX",
+    "Link": ""
   },
   {
     "SNO": "13",
-    "Topic": "Modern JavaScript Development: Modules, Tooling, and Functional"
+    "Topic": "Modern JavaScript Development: Modules, Tooling, and Functional",
+    "Link": ""
   },
   {
     "SNO": "14",
-    "Topic": "Forkify App: Building a Modern Application"
+    "Topic": "Forkify App: Building a Modern Application",
+    "Link": ""
   }
 ]
