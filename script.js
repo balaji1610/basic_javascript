@@ -920,9 +920,53 @@ const fff = async () => {
 
   const mapData = Detilsdd.map((elm, index) => {
     console.log(index);
-    return elm;
+
+    return elm.name;
   });
-  console.log(mapData);
+
+  document.getElementById("getURL").innerHTML = mapData;
+  console.log(mapData, "Mapdata");
 };
 
 fff();
+
+// --------- Javascript Topices Fetch APi
+
+const topic = async () => {
+  const res = await fetch("./Utils/Topices.json");
+  // console.log(res, "res");
+
+  let getSno;
+  let getTopic;
+  if (!res.ok) {
+    console.log("---404 Error ---");
+  } else {
+    const check = await res.json();
+    console.log(check, "SuccessFully");
+
+    //Get SerialNumber
+    getSno = check.map((elm) => {
+      return elm.SNO;
+    });
+    // Get Topic
+
+    getTopic = check.map((elm) => {
+      return elm.Topic;
+    });
+  }
+  console.log(getSno, getTopic, "getSno");
+
+  if (!res.ok) {
+    document.getElementById("topicno").innerHTML =
+      ".....Under Maninteance.....";
+  } else {
+    for (var y = 0; y <= getSno.length - 1; y++) {
+      // let dataa = getTopic[y];
+      // console.log(dataa, "dataa");
+
+      document.getElementById("topicno").innerHTML += getTopic[y] + "<br>";
+      document.getElementById("getsno").innerHTML += getSno[y] + "<br>";
+    }
+  }
+};
+topic();

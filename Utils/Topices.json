@@ -1,0 +1,58 @@
+[
+  {
+    "SNO": "01",
+    "Topic": "JavaScript Fundamentals Part 1"
+  },
+  {
+    "SNO": "02",
+    "Topic": "JavaScript Fundamentals Part 2"
+  },
+  {
+    "SNO": "03",
+    "Topic": "JavaScript in the Browser: DOM and Events Fundamentals"
+  },
+  {
+    "SNO": "04",
+    "Topic": "How JavaScript Works Behind the Scenes"
+  },
+  {
+    "SNO": "05",
+    "Topic": "Data Structures, Modern Operators and Strings"
+  },
+  {
+    "SNO": "06",
+    "Topic": "A Closer Look at Functions"
+  },
+  {
+    "SNO": "07",
+    "Topic": "Working With Arrays"
+  },
+  {
+    "SNO": "08",
+    "Topic": "Numbers, Dates, Intl and Timers"
+  },
+  {
+    "SNO": "09",
+    "Topic": "Advanced DOM and Events"
+  },
+  {
+    "SNO": "10",
+    "Topic": "Object-Oriented Programming (OOP) With JavaScript"
+  },
+  {
+    "SNO": "11",
+    "Topic": "Mapty App: OOP, Geolocation, External Libraries, and More!"
+  },
+  {
+    "SNO": "12",
+    "Topic": "Asynchronous JavaScript: Promises, Async/Await, and AJAX"
+  },
+  {
+    "SNO": "13",
+    "Topic": "Modern JavaScript Development: Modules, Tooling, and Functional"
+  },
+  {
+    "SNO": "14",
+    "Topic": "Forkify App: Building a Modern Application"
+  }
+]
