@@ -943,7 +943,7 @@ const topic = async () => {
     console.log("---404 Error ---");
   } else {
     const check = await res.json();
-    console.log(check, "SuccessFully");
+    // console.log(check, "SuccessFully");
 
     //Get SerialNumber
     getSno = check.map((elm) => {
@@ -959,7 +959,7 @@ const topic = async () => {
       return elm.Link;
     });
   }
-  console.log(getSno, getTopic, getLink, "getSno");
+  // console.log(getSno, getTopic, getLink, "getSno");
 
   if (!res.ok) {
     document.getElementById("topicno").innerHTML =
@@ -978,3 +978,28 @@ const topic = async () => {
   }
 };
 topic();
+
+//Null vs Undefined
+
+let Define;
+
+// let Define = null;
+console.log(Define, "Define");
+
+console.log(typeof undefined);
+console.log(typeof null);
+
+console.log(null == undefined); //check value
+
+console.log(null === undefined); // check datat type
+
+//Difference between Let & Const & var
+
+var job = "hhhh";
+var job = "Hello";
+console.log(job, "job");
+let declare = "balaji";
+
+declare = "hrrb";
+
+console.log(declare, "declare");
