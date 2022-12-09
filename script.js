@@ -1003,3 +1003,19 @@ let declare = "balaji";
 declare = "hrrb";
 
 console.log(declare, "declare");
+
+//instanceof javascript
+
+//Returns ture is an object is an instance of an object type
+
+const Checkinstance = {
+  name: "balaji",
+  Clg: "SCAD CET",
+};
+
+console.log(job instanceof Object, "Instance");
+
+console.log(Checkinstance instanceof Object, "Checkinstance");
+
+
+
