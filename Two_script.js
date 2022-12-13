@@ -1,3 +1,11 @@
+let arr = hello();
+
+function hello() {
+  return "Hello";
+}
+
+console.log(arr, "arr");
+
 // Operators
 
 //1) Arthimetic Operators
@@ -67,3 +75,63 @@ const operator = 24 + 3 > 9 + 9;
 console.log(operator);
 
 // https://www.dummies.com/article/technology/programming-web-design/general-programming-web-design/javascript-operator-precedence-254119/
+
+//Type Conversion
+
+// https://www.w3schools.com/js/js_type_conversion.asp
+let Numbertostring = 45;
+
+let StringToNumber = "80";
+let StringToNumber_01 = "Balaji";
+
+let BooleansToNumber = true;
+let NumberToBoolean = 0;
+
+console.log(String(Numbertostring), "Numbertostring");
+
+console.log(Number(StringToNumber), "StringToNumber");
+
+console.log(Number(StringToNumber_01), "StringToNumber_01");
+
+console.log(Number(BooleansToNumber), "BooleansToNumber");
+
+console.log(Boolean(NumberToBoolean), "NumberToBoolean");
+
+//Type Coercion
+
+let Typecoercion = "5" + 23; //It arthemetic operator  as Concatenate
+
+let TypecoercionstringToNumber = "5" * 3;
+
+console.log(Typecoercion, "Typecoercion");
+
+console.log(TypecoercionstringToNumber, "TypecoercionstringToNumber");
+
+//Truthy & Falsy Values
+
+//List of falsy values 0,empty strings,undefined,null,NaN
+
+// truthy. That includes:
+
+// '0' (a string containing a single zero)
+// 'false' (a string containing the text “false”)
+// [] (an empty array)
+// {} (an empty object)
+// function(){} (an “empty” function)
+
+// // let checkTruthyFalsyvalue = 0;
+let checkTruthyFalsyvalue = "10";
+// let checkTruthyFalsyvalue;
+// console.log(typeof checkTruthyFalsyvalue);
+if (checkTruthyFalsyvalue) {
+  console.log("This True Value");
+} else {
+  console.log("This False Value");
+}
+
+//Logical Operator
+
+// let CheckLogicalOperator = true; //Not
+let CheckLogicalOperator = false;
+
+console.log(!CheckLogicalOperator, "CheckLogicalOperator");
