@@ -135,3 +135,13 @@ if (checkTruthyFalsyvalue) {
 let CheckLogicalOperator = false;
 
 console.log(!CheckLogicalOperator, "CheckLogicalOperator");
+
+//Forward,Backward Loop
+
+for (let i = 0; i <= 10; i++) {
+  console.log(i, "ForwardLoop");
+}
+
+for (let y = 10; y >= 0; y--) {
+  console.log(y, "Backwardloop");
+}

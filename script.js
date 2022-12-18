@@ -881,7 +881,7 @@ document.getElementById("getURL").innerHTML = document.URL;
 const data = async () => {
   const reponse = await fetch("https://jsonplaceholder.typicode.com/todos");
 
-  // console.log(reponse, "got");
+  console.log(reponse, "got");
 
   if (!reponse.ok) {
     console.log("----------------->Error");
@@ -1016,6 +1016,7 @@ const Checkinstance = {
 console.log(job instanceof Object, "Instance");
 
 console.log(Checkinstance instanceof Object, "Checkinstance");
+
 
 
 
