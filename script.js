@@ -1,5 +1,5 @@
 // Template Strings
-
+// https://github.com/jonasschmedtmann/complete-javascript-course/blob/master/02-Fundamentals-Part-2/final/script.js
 var grettings = "Good Morning";
 
 console.log("Hello," + grettings + " Have a Nice Day");
@@ -1016,7 +1016,3 @@ const Checkinstance = {
 console.log(job instanceof Object, "Instance");
 
 console.log(Checkinstance instanceof Object, "Checkinstance");
-
-
-
-
