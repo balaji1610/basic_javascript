@@ -167,3 +167,15 @@ console.log(
     "Years of " +
     role
 );
+
+// ++ and -- operator as prefix and postfix
+// If you use the ++ operator as a prefix like: ++var, the value of var is incremented by 1; then it returns the value.
+// If you use the ++ operator as a postfix like: var++, the original value of var is returned first; then var is incremented by 1.
+
+for (let i = 0; i <= 10; i++) {
+  console.log(i++, "Postfix");
+}
+
+for (let y = 0; y <= 10; y++) {
+  console.log(++y, "Prefix");
+}
