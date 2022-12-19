@@ -145,3 +145,25 @@ for (let i = 0; i <= 10; i++) {
 for (let y = 10; y >= 0; y--) {
   console.log(y, "Backwardloop");
 }
+
+// Object Destructing
+
+const user1 = {
+  firstName: "Balaji",
+  lastName: "M",
+  role: "Front End Devloper",
+  experience: "2.5+",
+};
+
+const { firstName, lastName, role, experience } = user1;
+
+console.log(
+  "Myself " +
+    firstName +
+    " " +
+    lastName +
+    ", I have" +
+    experience +
+    "Years of " +
+    role
+);
