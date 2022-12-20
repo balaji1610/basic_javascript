@@ -179,3 +179,19 @@ for (let i = 0; i <= 10; i++) {
 for (let y = 0; y <= 10; y++) {
   console.log(++y, "Prefix");
 }
+
+//Multitple Conditions
+let xvalue = 20;
+if (xvalue == 5 || xvalue == 10) {
+  // console.log(true);
+} else {
+  // console.log(false);
+}
+
+//Short Multiple Conditions
+
+if ([5, 10, 15, 20].includes(xvalue)) {
+  console.log(true, "Short True");
+} else {
+  console.log(false, "Short False");
+}
