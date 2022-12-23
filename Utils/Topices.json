@@ -10,9 +10,20 @@
     "Link": "TopicsPage/Page02/Part02Javascript.html"
   },
   {
-    "SNO": "03",
-    "Topic": "JavaScript in the Browser: DOM and Events Fundamentals",
-    "Link": "TopicsPage/DOMevents/Domevent.html"
+    "SNO": "03A",
+    "Topic": "Project->Guess My Number",
+    "Link": "TopicsPage/GuessMyNumber/Domevent.html"
+  },
+
+  {
+    "SNO": "03B",
+    "Topic": "Project->Model",
+    "Link": "TopicsPage/Model/Model.html"
+  },
+  {
+    "SNO": "03C",
+    "Topic": "Project->Piggame",
+    "Link": "TopicsPage/Piggame/Piggame.html"
   },
   {
     "SNO": "04",
