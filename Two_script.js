@@ -195,3 +195,69 @@ if ([5, 10, 15, 20].includes(xvalue)) {
 } else {
   console.log(false, "Short False");
 }
+
+//Destructing Objects
+
+const object = {
+  Name: "Balaji",
+  Age: "25",
+  Role: "Front-End-Developer",
+  Email: "Bc@gmail.com",
+};
+
+const { Name, Age, Role, Email } = object;
+
+console.log(Name, Role, "DestructionObjects");
+
+//Object
+
+const Details = ["personalDetails", "CommunicationDetails"];
+const objectdd = [
+  {
+    [Details[0]]: {
+      Namedd: "Balaji",
+      DOB: "8/10/2000",
+    },
+
+    [Details[1]]: {
+      Email: "Ba1610@gmail.com",
+      Mobile: "1234567890",
+    },
+  },
+];
+
+const [
+  {
+    personalDetails: { Namedd, DOB },
+  },
+] = objectdd;
+
+console.log(Namedd, DOB);
+//Destructure array
+const arrayList = ["One", "Two", "Three", "Four", "Five"];
+
+const [a1, , a2, a3, a4] = arrayList;
+const [b1, b2, b3, ...others] = arrayList;
+console.log(a1, a2, a3, a4);
+console.log(b1, b2, b3, others);
+const [b4, b5] = others;
+console.log(b4, b5, "kk");
+
+//nested array
+
+const fruitList = ["Apple", "Orange", ["Lion", "Cat", "Tiger"]];
+
+const [n1, n2, n3] = fruitList;
+
+console.log(n1, n2, n3);
+
+const [n1a, n2a, [no1, no2, no3]] = fruitList;
+
+console.log(n1a, n2a, no1, no2, no3);
+
+//default values
+let c1d = "C is waiting";
+let b1d = "b1 is waiting";
+// const [ad, bd = b1d, cd = c1d] = [1, 2, 3];
+const [ad, bd = b1d, cd = c1d] = [1, 2];
+console.log(ad, bd, cd);

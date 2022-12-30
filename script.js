@@ -76,7 +76,9 @@ const details2 = {
   actors: ["Rio", "Denver"],
 };
 
-console.log(`Hello ${details2.actors[1]}`);
+const [Name, LastName] = details2.actors;
+
+console.log(`Hello ${Name}`);
 
 //Object  Function
 
