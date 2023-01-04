@@ -279,3 +279,14 @@ console.log(0 || undefined || null || 20 || 24);
 
 console.log(12 && 0 && "Hello");
 console.log(0 && undefined && null && 20 && 24);
+
+//Nullish operator
+
+// The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand when its left-hand side operand is null or undefined, and otherwise returns its left-hand side operand.
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing#:~:text=The%20nullish%20coalescing%20(%20%3F%3F%20)%20operator,its%20left%2Dhand%20side%20operand.
+
+console.log(1 || true);
+
+console.log(undefined && 23);
+
+console.log(0 ?? "hello");
