@@ -261,3 +261,21 @@ let b1d = "b1 is waiting";
 // const [ad, bd = b1d, cd = c1d] = [1, 2, 3];
 const [ad, bd = b1d, cd = c1d] = [1, 2];
 console.log(ad, bd, cd);
+
+//Short circuiting operators
+
+// https://www.geeksforgeeks.org/javascript-short-circuiting/
+
+//OR operator
+
+// It reads left to right
+// In case of OR, the expression is evaluated until we get one true result because the result will always be true
+
+console.log(12 || 0 || "Hello");
+
+console.log(0 || undefined || null || 20 || 24);
+
+//AND(&&) short circuit: In case of AND, the expression is evaluated until we get one false result because the result will always be false,
+
+console.log(12 && 0 && "Hello");
+console.log(0 && undefined && null && 20 && 24);
