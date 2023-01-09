@@ -76,7 +76,11 @@ const details2 = {
   actors: ["Rio", "Denver"],
 };
 
-const [Name, LastName] = details2.actors;
+// const [Name, LastName] = details2.actors;
+
+const {
+  actors: [Name, LastName],
+} = details2;
 
 console.log(`Hello ${Name}`);
 

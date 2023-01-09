@@ -290,3 +290,19 @@ console.log(1 || true);
 console.log(undefined && 23);
 
 console.log(0 ?? "hello");
+
+//Object Methods
+
+const ObjectFn = {
+  FirstName: "Balaji",
+  LastName: "M",
+  MobileNumber: "123456",
+};
+
+console.log(Object.keys(ObjectFn), "keys");
+
+console.log(Object.values(ObjectFn), "Values");
+
+for (const [key, value] of Object.entries(ObjectFn)) {
+  console.log(`${key} is ${value}`);
+}
