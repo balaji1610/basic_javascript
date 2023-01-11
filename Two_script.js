@@ -306,3 +306,39 @@ console.log(Object.values(ObjectFn), "Values");
 for (const [key, value] of Object.entries(ObjectFn)) {
   console.log(`${key} is ${value}`);
 }
+
+// Map and set
+
+const MapData = ["Facebook", "Netflix", "Hotstar", "Instagram", "Instagram"];
+
+const DuplicateArray = new Set(MapData);
+DuplicateArray.add("Balaji", "Add"); // Add value
+console.log(DuplicateArray.has("Facebook"));
+console.log(DuplicateArray.size);
+console.log(DuplicateArray);
+
+const NewArray = new Map([
+  ["FirstName", "Balaji"],
+  ["Email", "balaji@email.com"],
+]);
+
+NewArray.set("MobileNumber", "123456789");
+
+NewArray.set("Degree", "BE").set("Professioanl", "IT");
+
+console.log(NewArray.get("Degree"));
+NewArray.delete("Professioanl");
+console.log(NewArray, "ggg");
+
+const NewArrayDD = new Map([
+  ["FirstName", "Balaji"],
+  ["Email", "balaji@email.com"],
+]);
+
+NewArrayDD.set("MobileNumber", "123456789");
+
+NewArrayDD.set("Degree", "BE").set("Professioanl", "IT");
+
+console.log(NewArrayDD.get("Degree"));
+NewArrayDD.delete("Professioanl");
+console.log(NewArrayDD, "ggg");
