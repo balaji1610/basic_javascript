@@ -342,3 +342,14 @@ NewArrayDD.set("Degree", "BE").set("Professioanl", "IT");
 console.log(NewArrayDD.get("Degree"));
 NewArrayDD.delete("Professioanl");
 console.log(NewArrayDD, "ggg");
+
+//string
+function greet(el) {
+  const [says, name] = el.split(" ");
+
+  const newName = [says, name.toUpperCase(), "How Are You ?"].join(" ");
+
+  return newName;
+}
+
+console.log(greet("Hello balaji"));

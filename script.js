@@ -604,7 +604,7 @@ console.log(text2.trim()); // Remove Spaces
 
 var text3 = "Rio Is a ReactJS Developer";
 
-console.log(text3.replace("ReactJS", "AngularJS"));
+console.log(text3.replace("ReactJS", "AngularJS").replace("Rio", "Balaji"));
 
 // Global Replace
 
