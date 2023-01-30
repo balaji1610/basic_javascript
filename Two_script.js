@@ -387,3 +387,65 @@ const fillArray3 = ["Balaji", "Alex", "Chitra", "Berlin", "Tokoyo"];
 const result03 = fillArray3.fill("Karthick", 3, 4);
 
 console.log(result03);
+
+function Chose(method, content) {
+  return method == "Number"
+    ? content
+        .split("")
+        .filter((x) => Number(x))
+        .map((x) => Number(x))
+        .reduce((x, y) => x + y)
+    : content
+        .split("")
+        .filter((x) => !Number(x))
+        .join("");
+}
+
+console.log(
+  Chose("Number", "123frrr133334rrrrrr5balajidddddddddddddddddddddddddd")
+);
+
+//Array Practice
+
+let string = "013254";
+
+const result2Add = string
+  .split("")
+  .map((x) => x * 2)
+  .reduce((x, y) => x + y);
+const result2Greaterthan = string
+  .split("")
+  .filter((x) => x >= 3)
+  .map((x) => Number(x));
+
+const maxNumber = string
+  .split("")
+  .sort((a, b) => b - a)
+  .map((x) => Number(x));
+
+const minNumber = string
+  .split("")
+  .sort((a, b) => a - b)
+  .map((x) => Number(x));
+
+console.log(result2Add, result2Greaterthan, maxNumber, minNumber);
+
+let duplicateArray = [1, 1, 3, 4, 5, 5];
+
+const duplicateRemove = new Set(duplicateArray);
+
+console.log(duplicateRemove);
+
+//Array From
+
+const arrayfrom = "12344";
+
+const arrayfrom2 = "123";
+
+const arrayfrom3 = ["Hello", "Hello", "Alex", "Alex"];
+const frommethod = Array.from(arrayfrom, Number);
+const frommethod2 = Array.from(arrayfrom2, (x) => x * 2);
+
+const fromethod3 = Array.from(new Set(arrayfrom3));
+
+console.log(frommethod, frommethod2, fromethod3);
