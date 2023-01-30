@@ -353,3 +353,37 @@ function greet(el) {
 }
 
 console.log(greet("Hello balaji"));
+
+//array
+
+const array = [3, 4, 1, 2];
+
+const ascending = array.sort((a, b) => a - b);
+
+const descending = array.sort((a, b) => b - a);
+
+console.log(descending);
+
+//fill
+// Syntax
+// fill(value)
+// fill(value, start)
+// fill(value, start, end)
+
+const fillArray = ["Balaji", "Alex", "Chitra", "Berlin", "Tokoyo"];
+
+const result01 = fillArray.fill("Karthick");
+
+console.log(result01);
+
+const fillArray2 = ["Balaji", "Alex", "Chitra", "Berlin", "Tokoyo"];
+
+const result02 = fillArray2.fill("Karthick", 2);
+
+console.log(result02);
+
+const fillArray3 = ["Balaji", "Alex", "Chitra", "Berlin", "Tokoyo"];
+
+const result03 = fillArray3.fill("Karthick", 3, 4);
+
+console.log(result03);
