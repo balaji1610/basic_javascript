@@ -449,3 +449,96 @@ const frommethod2 = Array.from(arrayfrom2, (x) => x * 2);
 const fromethod3 = Array.from(new Set(arrayfrom3));
 
 console.log(frommethod, frommethod2, fromethod3);
+
+////////////// Number Start
+
+/* isNaN() 
+In JavaScript NaN is short for "Not-a-Number".
+
+The isNaN() method returns true if a value is NaN.
+
+The isNaN() method converts the value to a number before testing it.
+*/
+
+console.log(isNaN("jell"));
+console.log(isNaN("12hl"));
+console.log(isNaN(45));
+console.log(isNaN("34"));
+console.log(isNaN(8.03));
+
+//parseInt && parseFloat
+//string to number
+/*
+
+Synatax;
+parseInt(string)
+parseInt(string, radix)
+The parseInt() function parses a string argument and returns an integer
+
+The parseFloat() function parses a string argument and returns a floating point number.
+
+parseFloat(string)
+*/
+const parseint01 = "31edf";
+
+const parseint02 = "edf34";
+
+const parseint03 = "2.44";
+
+const parseinto4 = "geek";
+
+console.log(
+  parseInt(parseint01),
+  parseInt(parseint02),
+  parseInt(parseint03),
+  parseInt(parseinto4)
+);
+
+const parsefloat = "343gff";
+const parsefloat02 = "edf34";
+
+const parsefloat03 = "2.44";
+
+const parsefloato4 = "geek";
+
+const parsefloat05 = "34";
+
+console.log(
+  parseFloat(parsefloat),
+  parseFloat(parsefloat02),
+  parseFloat(parsefloat03),
+  parseFloat(parsefloato4),
+  parseFloat(parsefloat05)
+);
+
+//isFinite()
+
+// The JavaScript isFinite() function is used to check whether a number is a finite, legal number or not. It returns true for all the values except +infinity, -infinity, or NaN.
+
+const inf01 = 10;
+
+const inf02 = "geeks";
+
+const info3 = false;
+
+const info4 = 1000 / 0;
+
+console.log(isFinite(inf01), isFinite(inf02), isFinite(info3), isFinite(info4));
+
+//Number.isInteger()
+
+/* Syntax 
+Number.isInteger(value)
+*/
+
+// The boolean value true if the given value is an integer. Otherwise false
+
+console.log(Number.isInteger("hello"));
+
+console.log(Number.isInteger(1000 / 0));
+
+console.log(Number.isInteger(34));
+
+console.log(Number.isInteger(34.5));
+
+console.log(Number.isInteger("34"));
