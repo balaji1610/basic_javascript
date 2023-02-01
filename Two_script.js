@@ -450,7 +450,7 @@ const fromethod3 = Array.from(new Set(arrayfrom3));
 
 console.log(frommethod, frommethod2, fromethod3);
 
-////////////// Number Start
+//////////////-------------> Number Start
 
 /* isNaN() 
 In JavaScript NaN is short for "Not-a-Number".
@@ -542,3 +542,318 @@ console.log(Number.isInteger(34));
 console.log(Number.isInteger(34.5));
 
 console.log(Number.isInteger("34"));
+
+///////////////<--------- Number END
+
+//////////////---------->Math Start
+
+/*
+ Min and Max
+ The Math.max() static method returns the largest of the numbers
+ Syntax:
+Math.max(value)
+Math.max(...array)
+The Math.min() static method returns the smallest of the numbers
+
+ Syntax:
+Math.min(value)
+Math.min(...array)
+*/
+
+const maxMethod01 = [2, 4, 5, 8, "9"];
+const maxMethod02 = ["10", "34", "84"];
+const maxMethod03 = [0, -1, -3, -4];
+const maxMethod04 = [-2, -3, -4, -5];
+const maxMethod05 = [1];
+const maxMethod06 = ["hello", "how", "areyou"];
+const maxMethod07 = [10, 12, "hello"];
+
+console.log(
+  Math.max(...maxMethod01),
+  Math.max(...maxMethod02),
+  Math.max(...maxMethod03),
+  Math.max(...maxMethod04),
+  Math.max(...maxMethod05),
+  Math.max(19, 20, 34),
+  Math.max(...maxMethod06),
+  Math.max(...maxMethod07)
+);
+
+console.log(
+  Math.min(...maxMethod01),
+  Math.min(...maxMethod02),
+  Math.min(...maxMethod03),
+  Math.min(...maxMethod04),
+  Math.min(...maxMethod05),
+  Math.min(19, 20, 34),
+  Math.min(...maxMethod06),
+  Math.min(...maxMethod07)
+);
+/*
+Math.abs()
+The Math.abs() static method returns the absolute value of a number
+Syntax:
+Math.abs(x)
+x->a number
+Return value:
+The absolute value of x. If x is negative (including -0), returns -x. Otherwise, returns x. The result is therefore always a positive number or 0.
+
+*/
+
+const absMethod01 = -2;
+
+const absMethod02 = "sgggg";
+const absMethod03 = "-2";
+
+console.log(
+  Math.abs(absMethod01),
+  Math.abs(absMethod02),
+  Math.abs(absMethod03)
+);
+
+/* 
+Math.sign()
+The Math.sign() static method returns 1 or -1, indicating the sign of the number passed as argument.
+Syntax:
+Math.sign(x)
+x->A number.
+
+Return value:
+A number representing the sign of x:
+
+If x is positive, returns 1.
+If x is negative, returns -1.
+If x is positive zero, returns 0.
+If x is negative zero, returns -0.
+Otherwise, returns NaN.
+*/
+
+const signMethod = 4;
+const signMethod01 = -4;
+const signMethod02 = 0;
+const signMethod03 = -0;
+
+const signMethod04 = "hello";
+const signMethod05 = ["hello", "hgogg"];
+const signMethod6 = 4.08;
+
+console.log(
+  Math.sign(signMethod),
+  Math.sign(signMethod01),
+  Math.sign(signMethod02),
+  Math.sign(signMethod03),
+  Math.sign(signMethod04),
+  Math.sign(signMethod05),
+  Math.sign(signMethod6)
+);
+
+/*
+Math.trunc()
+The Math.trunc() static method returns the integer part of a number by removing any fractional digits.
+Syntax
+Math.trunc(x)
+x->number
+
+Return value:
+The integer part of x
+ */
+
+const truncMethod = 12.48;
+
+const trunMethod01 = -23.455;
+
+const trunMethod02 = 12;
+
+const trunMethod03 = -22;
+
+const trunMethod04 = "hello";
+
+const trunMethod05 = [1, 3, 5];
+
+console.log(
+  Math.trunc(truncMethod),
+  Math.trunc(trunMethod01),
+  Math.trunc(trunMethod02),
+  Math.trunc(trunMethod03),
+  Math.trunc(trunMethod04),
+  Math.trunc(trunMethod05)
+);
+
+/*Math.random()
+
+The Math.random() static method returns a floating-point, pseudo-random number that's greater than or equal to 0 and less than 1
+Syntax:
+Math.random()
+Return value:
+Math.random() always returns a number lower than 1.
+A floating-point, pseudo-random number between 0 (inclusive) and 1 (exclusive).
+ */
+
+const randomMethod01 = 10;
+const randomMethod02 = -5;
+
+const randomMethod03 = -23;
+const randomMethod04 = 34.5;
+const randomMethod05 = "Hello";
+
+console.log(
+  Math.random(randomMethod01),
+  Math.random(randomMethod02),
+  Math.random(randomMethod03),
+  Math.random(),
+  Math.random(randomMethod04),
+  Math.random(randomMethod05),
+  Math.random() * 10,
+  Math.random() * 11
+);
+
+/* 
+Math.floor():
+The Math.floor() static method always rounds down and returns the largest integer less than or equal to a given number.
+Syntax:
+Math.floor(x)
+x->A number.
+Return value:
+The largest integer smaller than or equal to x
+*/
+
+const floorMethod01 = 1.4;
+
+const floorMethod0A = 5.7;
+const floorMethod02 = 10;
+
+const floorMethod03 = 0;
+
+const floorMethod04 = 1;
+
+const floorMethod06 = -10;
+
+const floorMethod07 = -13.1;
+
+const floorMethod08 = "hello";
+
+console.log(
+  Math.floor(floorMethod01),
+  Math.floor(floorMethod0A),
+  Math.floor(floorMethod02),
+  Math.floor(floorMethod03),
+  Math.floor(floorMethod04),
+  Math.floor(floorMethod06),
+  Math.floor(floorMethod07),
+  Math.floor(floorMethod08)
+);
+/*Math.round()
+The Math.round() static method returns the value of a number rounded to the nearest integer.
+Syntax
+Math.round(x)
+x->A number
+Return value:
+The value of x rounded to the nearest integer
+*/
+
+const roundMethod01 = 1.4;
+
+const roundMethod0A = 5.7;
+const roundMethod02 = 10;
+
+const roundMethod03 = 0;
+
+const roundMethod04 = 1;
+
+const roundMethod06 = -10;
+
+const roundMethod07 = -13.1;
+
+const roundMethod08 = "hello";
+
+console.log(
+  Math.round(roundMethod01),
+  Math.round(roundMethod0A),
+  Math.round(roundMethod02),
+  Math.round(roundMethod03),
+  Math.round(roundMethod04),
+  Math.round(roundMethod06),
+  Math.round(roundMethod07),
+  Math.round(roundMethod08)
+);
+
+/*
+Math.ceil()
+The Math.ceil() static method always rounds up and returns the smaller integer greater than or equal to a given number.
+Syntax
+Math.ceil(x)
+x->A number.
+
+Return value:
+The smallest integer greater than or equal to x. It's the same value 
+
+ */
+const celiMethod01 = 1;
+const celiMethod01A = 0.7;
+const celiMethod01B = 1.49;
+
+const celiMethod0A = 5.7;
+const celiMethod02 = 10;
+
+const celiMethod03 = 0;
+
+const celiMethod04 = 1;
+
+const celiMethod06 = -10;
+
+const celiMethod07 = -13.1;
+
+const celiMethod08 = "hello";
+
+console.log(
+  Math.ceil(celiMethod01),
+  Math.ceil(celiMethod01A),
+  Math.ceil(celiMethod01B),
+  Math.ceil(celiMethod0A),
+  Math.ceil(celiMethod02),
+  Math.ceil(celiMethod03),
+  Math.ceil(celiMethod04),
+  Math.ceil(celiMethod06),
+  Math.ceil(celiMethod07),
+  Math.ceil(celiMethod08)
+);
+
+/*Math.sqrt()
+
+
+
+The Math.sqrt() static method returns the square root of a number
+
+x->A number greater than or equal to 0.
+Return value
+The square root of x, a nonnegative number. If x < 0, returns NaN.
+
+ */
+
+const sqrtMethod = 9;
+
+const sqrtMethod1 = 16;
+
+const sqrtMethod02 = 27;
+const sqrtMethod03 = -35;
+
+const sqrtMethod04 = "hello";
+
+console.log(
+  Math.sqrt(sqrtMethod),
+  Math.sqrt(sqrtMethod1),
+  Math.sqrt(sqrtMethod02),
+  Math.sqrt(sqrtMethod03),
+  Math.sqrt(sqrtMethod04)
+);
+/* 
+The Math.pow() static method returns the value of a base raised to a power.
+Syntax
+Math.pow(base, exponent)
+Return value
+A number representing base taken to the power of exponent. Returns NaN
+*/
+
+console.log(Math.pow(5, 2), Math.pow(5, 3), Math.pow(5, 3.4), Math.pow("rea"));
+
+////////////////////<-------- Math End
