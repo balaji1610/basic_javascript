@@ -543,6 +543,24 @@ console.log(Number.isInteger(34.5));
 
 console.log(Number.isInteger("34"));
 
+/*
+toFixed;
+The toFixed() method formats a number using fixed-point notation.
+Syntax:
+toFixed(digits)
+*/
+
+const fixedMethod = 45.345;
+
+const fixedMethod02 = -34.46;
+
+console.log(
+  fixedMethod.toFixed(0),
+  fixedMethod.toFixed(1),
+  fixedMethod.toFixed(2),
+  fixedMethod02.toFixed(1)
+);
+
 ///////////////<--------- Number END
 
 //////////////---------->Math Start
@@ -857,3 +875,46 @@ A number representing base taken to the power of exponent. Returns NaN
 console.log(Math.pow(5, 2), Math.pow(5, 3), Math.pow(5, 3.4), Math.pow("rea"));
 
 ////////////////////<-------- Math End
+
+/////////////------>Practice sum
+
+function conuntNumber(args) {
+  const PostiveNumber = [];
+  const NegativeNumber = [];
+
+  const checkingNumber = args.filter((x) =>
+    Math.sign(x) == 1 ? PostiveNumber.push(x) : NegativeNumber.push(x)
+  );
+
+  return [PostiveNumber, NegativeNumber].map((x, i) =>
+    i == 0 ? x.reduce((x, y) => x + y) : x.reduce((x, y) => x + y)
+  );
+}
+
+console.log(
+  conuntNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15])
+);
+
+const arraydg = ["Alex", "Balaji"];
+
+const Pass = function (el) {
+  let result;
+
+  switch (el) {
+    case 0:
+      result = "Hello Alex";
+      break;
+    case 1:
+      result = "Hello Balaji";
+      break;
+    default:
+      result = "fag";
+  }
+  return result;
+};
+
+const finalResult = arraydg.map((x, i) => Pass(i)).join(",");
+
+console.log(finalResult, "ggggg");
+
+////////////////////<--------Practice sum
