@@ -561,6 +561,10 @@ console.log(
   fixedMethod02.toFixed(1)
 );
 
+console.log(Number(13_94));
+console.log(Number("13_94"));
+console.log(parseInt("13_94"));
+
 ///////////////<--------- Number END
 
 //////////////---------->Math Start
@@ -876,6 +880,96 @@ console.log(Math.pow(5, 2), Math.pow(5, 3), Math.pow(5, 3.4), Math.pow("rea"));
 
 ////////////////////<-------- Math End
 
+//////Bigint
+
+// JavaScript BigInt variables are used to store big integer values that are too big to be represented by a normal JavaScript Number .
+
+console.log(Number.MAX_SAFE_INTEGER, "MAXIMUm");
+
+const Normal = 12949389883;
+const bigint = 833333n;
+
+console.log(typeof Normal, typeof bigint);
+
+//////////////
+
+const day = new Date();
+
+console.log(
+  day.getDate(),
+  "getDate",
+  day.getDay(),
+  "getDay",
+  day.getFullYear(),
+  "getFullYear",
+  day.getHours(),
+  "getHours",
+  day.getMilliseconds(),
+  "getMilliseconds",
+  day.getMinutes(),
+  "getMinutes",
+  day.getMonth() + 1,
+  "getMonth",
+  day.toDateString(),
+  "toDateString",
+  day.getTime(),
+  "getTime"
+);
+
+const today = `${day.getDate()}/${day.getMonth() + 1}/${day.getFullYear()}`;
+const todaytime = `${day.getHours()}:${day.getMinutes()}:${day.getSeconds()}`;
+console.log(today, todaytime);
+
+///// 12 hour format
+
+const da = new Date();
+
+const hour = da.getHours();
+
+const timeperiod = hour < 12 ? "AM" : "PM";
+
+const time = hour % 12;
+const min = da.getMinutes();
+
+console.log(`${time} : ${min} ${timeperiod}`, "12 hour format");
+
+////////////Intl.DateTimeFormat.prototype.format()
+
+/* 
+// The Intl.DateTimeFormat.prototype.format() method is an inbuilt method in JavaScript that is used to format a date according to the locale and formatting options of this Intl.DateTimeFormat object. 
+///////////Parameters
+
+1)dateStyle (full,long,medium,short)
+
+2)timeStyle (full,long,medium,short)
+
+3)hour12(true,false
+  
+4)weekday(long,short,narrow)
+
+5)year(numeric,2-digit)
+
+6)month(numeric,2-digit,long,short,narrow)
+
+7)day(numeric,2-digit)
+
+8)hour(numeric,2-digit)
+
+9)minute(numeric,2-digit)
+
+10)second(numeric,2-digit)
+
+11)timeZoneName(long,short,shortOffset,longOffset,shortGeneric,longGeneric)
+
+*/
+
+const options1 = {
+  dateStyle: "short",
+  timeStyle: "short",
+
+  hour12: true,
+};
+console.log(new Intl.DateTimeFormat("en-GB", options1).format(day));
 /////////////------>Practice sum
 
 function conuntNumber(args) {
