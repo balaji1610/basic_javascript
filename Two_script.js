@@ -1012,3 +1012,17 @@ const finalResult = arraydg.map((x, i) => Pass(i)).join(",");
 console.log(finalResult, "ggggg");
 
 ////////////////////<--------Practice sum
+
+///////Multiple Ternary Operator
+
+function Numberstatus(n) {
+  return n == 0 ? "Zero" : n > 0 ? "Postive" : n < 0 ? "Negative" : null;
+}
+
+console.log(Numberstatus(-2));
+//PrimeNumber
+function checkPrimeNumber(n) {
+  return n % 2 == 1 ? `${n} Is a Prime Number` : `${n} Is NOT a Prime Number`;
+}
+
+console.log(checkPrimeNumber(23));
