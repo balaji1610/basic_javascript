@@ -963,6 +963,10 @@ console.log(`${time} : ${min} ${timeperiod}`, "12 hour format");
 
 */
 
+// The Navigator.languages read-only property returns an array of strings representing the user's preferred languages.
+const navi = navigator.language;
+
+console.log(navi, "navigator");
 const options1 = {
   dateStyle: "short",
   timeStyle: "short",
@@ -970,6 +974,34 @@ const options1 = {
   hour12: true,
 };
 console.log(new Intl.DateTimeFormat("en-GB", options1).format(day));
+
+/////// NumberFormat
+// The Intl object in JavaScript provides a way to format and manipulate numbers, dates, and strings according to the conventions of a specific locale
+/*
+///Reference site
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat/NumberFormat#options
+options
+1)style(decimal(default),currency,percent)
+
+2)currency(USD,INR)
+3)currencyDisplay(symbol(default),narrowSymbol,code,name)
+4)currencySign(standard(default),accounting)
+5)minimumFractionDigits,maximumFractionDigits
+*/
+
+const currency = 1500.5678;
+
+const options2 = {
+  style: "currency",
+  currency: "USD",
+  currencyDisplay: "symbol",
+};
+
+console.log(
+  new Intl.NumberFormat("en-us", options2).format(currency),
+  "<----CurrencyMethod"
+);
+
 /////////////------>Practice sum
 
 function conuntNumber(args) {

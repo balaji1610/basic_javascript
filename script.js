@@ -758,7 +758,7 @@ console.log(emptyarray);
 // ---------- Array Tools --------- END
 
 // ----------- SetIntervel & SetTimeout ---- START
-
+//clearTimeout(),clearInterval()
 // setTimeout execute function just one time
 // setInterval execute function unlimited times
 
