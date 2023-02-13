@@ -1058,3 +1058,6 @@ function checkPrimeNumber(n) {
 }
 
 console.log(checkPrimeNumber(23));
+
+//Dom Events
+console.log(document.documentElement);
