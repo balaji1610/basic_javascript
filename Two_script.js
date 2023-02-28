@@ -1061,3 +1061,13 @@ console.log(checkPrimeNumber(23));
 
 //Dom Events
 console.log(document.documentElement);
+
+//SetTimeout
+
+console.log(10);
+
+setTimeout(() => console.log(2), 1000);
+
+console.log(3);
+
+setTimeout(() => console.log(4), 0);
