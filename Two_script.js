@@ -1071,3 +1071,29 @@ setTimeout(() => console.log(2), 1000);
 console.log(3);
 
 setTimeout(() => console.log(4), 0);
+
+//Module Pattern
+
+/*
+(fn(){
+
+})();
+*/
+const Operations = (function () {
+  const Add = (n1, n2) => {
+    return n1 + n2;
+  };
+
+  const Sub = (n1, n2) => {
+    return n1 - n2;
+  };
+
+  return {
+    Add,
+    Sub,
+  };
+})();
+
+console.log(Operations.Add(2, 2));
+console.log(Operations.Sub(2, 2));
+console.log(Operations);
