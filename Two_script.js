@@ -1088,12 +1088,21 @@ const Operations = (function () {
     return n1 - n2;
   };
 
+  const WhatisType = (el) => {
+    return typeof el;
+  };
   return {
     Add,
     Sub,
+    WhatisType,
   };
 })();
 
-console.log(Operations.Add(2, 2));
-console.log(Operations.Sub(2, 2));
+const { Add, Sub, WhatisType } = Operations;
+
+console.log(Add(1, 2));
+
+console.log(Sub(2, 2));
+console.log(WhatisType("hello"));
+
 console.log(Operations);
