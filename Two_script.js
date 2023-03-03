@@ -356,6 +356,7 @@ console.log(greet("Hello balaji"));
 
 //array
 
+//Sorting Numbers
 const array = [3, 4, 1, 2];
 
 const ascending = array.sort((a, b) => a - b);
@@ -363,6 +364,27 @@ const ascending = array.sort((a, b) => a - b);
 const descending = array.sort((a, b) => b - a);
 
 console.log(descending);
+const sortString = ["Balaji", "Alex", "Karthick"];
+
+const sortString2 = ["Balaji", "Alex", "Karthick"];
+
+const ascendingString = sortString2.sort((a, b) => a.localeCompare(b));
+
+const descendingString = sortString.sort((a, b) => b.localeCompare(a));
+
+console.log(ascendingString, descendingString);
+
+const sortNumberString = ["aa", "cc", "dd", "aa", 1, 3, 4, 1];
+const sortNumberString2 = ["aa", "cc", "dd", "aa", 1, 3, 4, 1];
+//ascebding order
+const resultsortNumberString = sortNumberString.sort((a, b) =>
+  a > b ? -1 : 1
+);
+//descendingorder
+const resultsortNumberStringDes = sortNumberString2.sort((a, b) =>
+  a < b ? -1 : 1
+);
+console.log(resultsortNumberString, resultsortNumberStringDes);
 
 //fill
 // Syntax
