@@ -1022,3 +1022,116 @@ const Checkinstance = {
 console.log(job instanceof Object, "Instance");
 
 console.log(Checkinstance instanceof Object, "Checkinstance");
+
+
+
+//scope
+
+//common approach
+let a = 10;
+var b = 20;
+const c = 30
+
+function globalscope(){
+    console.log(a,b,c)
+}
+
+globalscope()
+
+  console.log(a,b,c)
+  
+ //----------
+ 
+//reasign  -- var and let
+ let d ;
+ var e;
+
+ function secondglobalscope(){
+    e="h3llo" 
+    d=30;
+    e="balaji" 
+    console.log(d,e)
+ }
+secondglobalscope()
+
+    console.log(d,e)
+    
+//-----------
+//     const f
+//     function thirdglobalscope(){
+//         f="Third"  
+//       console.log(f)  
+//     }
+//   thirdglobalscope()
+//     console.log(f)  
+    //0/p->throw Error
+    
+    
+//redeclare
+
+var w=20
+let wr = "hello"
+function fourthglobalScope(){
+  var w=50;
+  let wr="Wednesnday"
+ console.log(w,wr,"fourthglobalScope")   
+}
+
+fourthglobalScope()
+ console.log(w,wr)  
+ 
+ 
+ // redeclare 
+ 
+ //all function expression
+ var one = "hjlll"
+ let two = "good"
+ var hellodd = function(){
+      console.log(one,two)  
+     
+ }
+ hellodd()
+
+  console.log(one,two)  
+  
+  
+ //nested function 
+  var at="hello"
+  function nested(){
+      
+        var at="balaji"
+      
+      function nestedSecond(){
+           var at="javascript"
+          
+         console.log(at,"nestedSecond-->02") 
+      }
+       console.log(at,"nestedSecond-->03") 
+      nestedSecond()
+  }
+
+nested()
+ console.log(at,"nestedSecond-->01") 
+///-------->
+// var x = 10;
+// if (true) {
+//   var x = 20;
+//   console.log(x); // 20
+// }
+// console.log(x); // 20
+
+
+//without var keyword
+
+username="Balaji"
+
+
+function globalwithoutkey(){
+    
+  console.log(username)  
+}
+globalwithoutkey()
+console.log(username)
+
+
+

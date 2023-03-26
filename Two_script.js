@@ -79,7 +79,7 @@ console.log(operator);
 //Type Conversion
 
 // https://www.w3schools.com/js/js_type_conversion.asp
-let Numbertostring = 45;
+let Numbertosnew_seting = 45;
 
 let StringToNumber = "80";
 let StringToNumber_01 = "Balaji";
@@ -1128,3 +1128,26 @@ console.log(Sub(2, 2));
 console.log(WhatisType("hello"));
 
 console.log(Operations);
+
+//Two array compare filter
+
+var mispelled = function (word1, word2) {
+  return word1.split("").filter((x) => !word2.split("").includes(x));
+};
+
+console.log(mispelled("22versed", "versed"));
+
+//2 for loop
+
+function loop(s) {
+  const emptyarray = [];
+  for (let i = 0; i < s.length; i++) {
+    for (let j = i + 1; j < s.length; j++) {
+      emptyarray.push([s[i], s[j]]);
+    }
+  }
+
+  return emptyarray;
+}
+
+console.log(loop(["a", "b", "c", "d", "e"]));
