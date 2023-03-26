@@ -1151,3 +1151,41 @@ function loop(s) {
 }
 
 console.log(loop(["a", "b", "c", "d", "e"]));
+
+//arithmetic Operator
+
+function operation(x) {
+  var result = 0;
+
+  for (let i = 0; i < x.length; i++) {
+    result += x[i];
+  }
+
+  return result;
+}
+
+console.log(operation([1, 2, 3, 4, 5]));
+
+function operation2(x) {
+  var result = "";
+
+  for (let i = 0; i < x.length; i++) {
+    result += x[i];
+  }
+
+  return result;
+}
+
+console.log(operation2(["B", "A", "L", "A", "J", "I"]));
+
+function operation3(...x) {
+  var result = 0;
+
+  for (let i = 0; i < x.length; i++) {
+    result += x[i];
+  }
+
+  return result;
+}
+
+console.log(operation3(1, 2, 3, 4, 5));
