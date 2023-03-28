@@ -1189,3 +1189,64 @@ function operation3(...x) {
 }
 
 console.log(operation3(1, 2, 3, 4, 5));
+
+//two array compare same index
+
+function dup(x, y) {
+  const result = [];
+
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] == y[i]) {
+      result.push(true);
+    } else {
+      result.push(false);
+    }
+  }
+  console.log(result);
+  return result.every((x) => x === true);
+}
+
+console.log(dup([1, 2, 3, 4, 5], [1, 2, 3, 5, 4]));
+
+// compare Two array Difference
+function difference(x, y) {
+  const result = [];
+
+  const oneToTwo = x.map((x) => (y.includes(x) ? true : result.push(x)));
+  const twoToone = y.map((y) => (x.includes(y) ? true : result.push(y)));
+  return result.map(String);
+}
+
+console.log(difference([1, 2, 3], [100, 2, 1, 10]));
+
+//Write a JavaScript program to find a pair of elements (indices of the two numbers) from an given array whose sum equals a specific target number. Go to the editor
+
+// Input: numbers= [10,20,10,40,50,60,70], target=50
+// Output: 2, 3
+
+function target(x) {
+  for (let i = 0; i < x.length; i++) {
+    let result = x[i] + x[i + 1];
+
+    if (result === 50) {
+      return `${i} ${i + 1}`;
+    }
+  }
+}
+
+console.log(target([10, 20, 50, 60, 70, 10, 40]));
+
+//while Approach
+
+function repeatStr(n, s) {
+  let result = " ";
+
+  while (n > 0) {
+    result += s;
+
+    --n;
+  }
+  return result;
+}
+
+console.log(repeatStr(5, "* "));
