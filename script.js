@@ -943,10 +943,11 @@ const topic = async () => {
   // console.log(res, "res");
 
   let getSno;
+
   let getTopic;
   let getLink;
   if (!res.ok) {
-    console.log("---404 Error ---");
+    console.error("---404 Error ---");
   } else {
     const check = await res.json();
     // console.log(check, "SuccessFully");
