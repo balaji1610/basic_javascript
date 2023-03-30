@@ -90,3 +90,64 @@ function ReversedStrings4(x) {
 }
 
 console.log(ReversedStrings4("Hello"));
+
+//Add Length
+//https://www.codewars.com/kata/559d2284b5bb6799e9000047
+
+//1^nd method
+
+function addLength3(str) {
+  return str.split(" ").map((x, i) => `${x} ${x.length}`);
+}
+
+console.log(addLength3("you will win"));
+
+//2^nd method
+function addLength(str, emptyarray = []) {
+  const result = str.split(" ").map((x) => emptyarray.push(`${x} ${x.length}`));
+
+  return emptyarray;
+}
+console.log(addLength("you will win"));
+
+//3^method
+function addLength2(str) {
+  const result2 = str.split(" ").reduce((acc, curr) => {
+    const stringLength = `${curr} ${curr.length}`;
+    return [...acc, stringLength];
+  }, "");
+  return result2;
+}
+console.log(addLength2("Hello Balaji How are you"));
+
+//Quarter of the year
+//https://www.codewars.com/kata/5ce9c1000bab0b001134f5af
+
+//1^method
+const quarterOf = (month) => {
+  return month <= 3
+    ? 1
+    : month <= 6
+    ? 2
+    : month <= 9
+    ? 3
+    : month <= 12
+    ? 4
+    : null;
+};
+console.log(quarterOf(11));
+//2^nd method
+const returnarray = [1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4];
+const quarterOf2 = (month) => returnarray[month];
+
+console.log(quarterOf2(4));
+
+//3^nd method
+const quarterOf3 = (m) =>
+  (m <= 3 && 1) ||
+  (m <= 6 && 2) ||
+  (m <= 9 && 3) ||
+  (m <= 12 && 4) ||
+  "NOT FOUND";
+
+console.log(quarterOf3(2));
