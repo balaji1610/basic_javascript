@@ -151,3 +151,39 @@ const quarterOf3 = (m) =>
   "NOT FOUND";
 
 console.log(quarterOf3(2));
+
+//Reversed Words
+//https://www.codewars.com/kata/51c8991dee245d7ddf00000e
+function reverseWords(str) {
+  return str.split(" ").reverse().join(" ");
+}
+console.log(
+  reverseWords("The greatest victory is that which requires no battle")
+);
+
+//clock //not completed pending validation and add math methods
+
+function getHMS(elm, time) {
+  var min;
+  var sec;
+  var hour;
+  if (time == "hours") {
+    min = elm * 60;
+    sec = min * 60;
+
+    return `${min} minutes ${sec} Seconds`;
+  } else if (time == "minutes") {
+    hour = Math.floor(elm / 60);
+    min = Math.floor(elm % 60);
+    sec = Math.floor(elm * 60);
+
+    return `${hour} hours ${min} minutes ${sec} Seconds`;
+  } else if (time == "seconds") {
+    min = elm / 60;
+    hour = min / 60;
+
+    return `${hour} hours ${min} minutes`;
+  }
+}
+
+console.log(getHMS(80, "minutes"));
