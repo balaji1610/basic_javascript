@@ -1250,3 +1250,13 @@ function repeatStr(n, s) {
 }
 
 console.log(repeatStr(5, "* "));
+
+let obj = {
+  key1: "value1",
+  key2: "value2",
+  key3: "value3",
+  key4: "value4",
+};
+Object.entries(obj).forEach(([key, value]) => {
+  console.log(key, value);
+});
