@@ -187,3 +187,57 @@ function getHMS(elm, time) {
 }
 
 console.log(getHMS(80, "minutes"));
+
+//Remove String Spaces
+//https://www.codewars.com/kata/57eae20f5500ad98e50002c5
+function noSpace(x) {
+  return x.split(" ").join("");
+}
+
+console.log(noSpace("8 j 8   mBliB8g  imjB8B8  jl  B "));
+
+//String repeat
+//https://www.codewars.com/kata/57a0e5c372292dd76d000d7e
+function repeatStr(n, s) {
+  return s.repeat(n);
+}
+
+console.log(repeatStr(5, " Hello "));
+//Counting sheep...
+//https://www.codewars.com/kata/54edbc7200b811e956000556
+
+//Invert values
+//https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad
+function invert(array) {
+  return array.map((x) => (Math.sign(x) == 1 ? -x : -x));
+}
+
+console.log(invert([1, 2, 3, 4, 5]));
+
+//Beginner - Reduce but Grow
+//https://www.codewars.com/kata/57f780909f7e8e3183000078
+function grow(x) {
+  return x.reduce((a, b) => a * b);
+}
+
+console.log(grow([2, 2, 2, 2, 2, 2]));
+
+//Vowel remover
+//https://www.codewars.com/kata/5547929140907378f9000039
+
+function shortcut(string) {
+  return string
+    .split("")
+    .map((x) => (["a", "e", "i", "o", "u"].includes(x) ? x.replace(x, "") : x))
+    .join("");
+}
+
+console.log(shortcut("complain"));
+
+//2^nd method
+
+function shortcut(string) {
+  return string.replace(/[aeiou]/g, "");
+}
+
+console.log(shortcut("complain"));
