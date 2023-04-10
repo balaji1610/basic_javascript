@@ -241,3 +241,52 @@ function shortcut(string) {
 }
 
 console.log(shortcut("complain"));
+
+//Grasshopper - Summation
+//https://www.codewars.com/kata/55d24f55d7dd296eb9000030
+
+var summation = function (num) {
+  var result = 0;
+  for (let i = 1; i <= num; i++) {
+    result += i;
+  }
+  return result;
+};
+
+console.log(summation(1));
+
+//Remove exclamation marks
+//https://www.codewars.com/kata/57a0885cbb9944e24c00008e
+function removeExclamationMarks(s) {
+  return s
+    .split("")
+    .filter((x) => x !== "!")
+    .join("");
+}
+
+console.log(removeExclamationMarks("Hello World!"));
+
+//Remove Special Characters
+function removeExclamationMarks2(s) {
+  let object = {
+    "!": "",
+    "#": "",
+    "%": "",
+  };
+
+  return s
+    .split("")
+    .map((x) => (x.includes(object[x]) ? object[x] : x))
+    .join("");
+}
+
+console.log(
+  removeExclamationMarks2("Hello World! # Hellow how are Your ? % hi balaji")
+);
+
+//3^method
+function removeExclamationMarks3(s) {
+  return s.replace(/!/gi, "");
+}
+
+console.log(removeExclamationMarks3("Hello World!"));
