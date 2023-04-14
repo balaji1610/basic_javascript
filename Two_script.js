@@ -87,7 +87,7 @@ let StringToNumber_01 = "Balaji";
 let BooleansToNumber = true;
 let NumberToBoolean = 0;
 
-console.log(String(Numbertostring), "Numbertostring");
+console.log(String(Numbertosnew_seting), "Numbertosnew_seting");
 
 console.log(Number(StringToNumber), "StringToNumber");
 

@@ -9,10 +9,11 @@ console.log(stringCount("", "z"));
 
 //2^nd method
 
-function secondStringCount(str, i) {
-  const emptyarray = [];
-  const output = str.split("").map((x) => (x == i ? emptyarray.push(x) : null));
-  return emptyarray.length;
+function secondStringCount(str, i, emptyarray2 = []) {
+  const output = str
+    .split("")
+    .map((x) => (x == i ? emptyarray2.push(x) : null));
+  return emptyarray2.length;
 }
 
 console.log(secondStringCount("Hello", "l"));
@@ -103,7 +104,8 @@ function addLength3(str) {
 console.log(addLength3("you will win"));
 
 //2^nd method
-function addLength(str, emptyarray = []) {
+function addLength(str) {
+  const emptyarray = [];
   const result = str.split(" ").map((x) => emptyarray.push(`${x} ${x.length}`));
 
   return emptyarray;
@@ -290,3 +292,77 @@ function removeExclamationMarks3(s) {
 }
 
 console.log(removeExclamationMarks3("Hello World!"));
+
+//Find Multiples of a Number
+
+//https://www.codewars.com/kata/58ca658cc0d6401f2700045f/javascript
+function findMultiples(integer, limit, resultaray = []) {
+  for (let i = integer; i <= limit; i += integer) {
+    resultaray.push(i);
+  }
+
+  return resultaray;
+}
+
+console.log(findMultiples(4, 27));
+
+//Is it a palindrome?
+//https://www.codewars.com/kata/57a1fd2ce298a731b20006a4
+
+function isPalindrome(x) {
+  return x.toLowerCase().split("").reverse().join("") == x.toLowerCase();
+}
+
+console.log(isPalindrome("a"));
+
+//Convert a String to a Number!
+//https://www.codewars.com/kata/544675c6f971f7399a000e79
+
+const stringToNumber = function (str) {
+  // return parseInt(str)
+  return Number(str);
+};
+
+console.log(stringToNumber("1405"));
+
+//Sum The Strings
+//https://www.codewars.com/kata/5966e33c4e686b508700002d
+function sumStr(...x) {
+  const result = x
+    .map((x) => Number(x))
+    .reduce((a, b) => {
+      return a + b;
+    });
+
+  return String(result);
+}
+
+console.log(sumStr("4", "5"));
+//Switch it Up!
+//https://www.codewars.com/kata/5808dcb8f0ed42ae34000031
+
+function switchItUp(number) {
+  const object = {
+    0: "Zero",
+    1: "One",
+    2: "Two",
+    3: "Three",
+    4: "Four",
+    5: "Five",
+    6: "Six",
+    7: "Seven",
+    8: "Eight",
+    9: "Nine",
+  };
+  return object[number];
+}
+console.log(switchItUp(5));
+
+//Remove First and Last Character
+//https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0
+
+function removeChar(str) {
+  return str.slice(1, str.length - 1);
+}
+
+console.log(removeChar("eloquent"));
