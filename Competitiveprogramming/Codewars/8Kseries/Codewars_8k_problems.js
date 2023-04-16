@@ -366,3 +366,33 @@ function removeChar(str) {
 }
 
 console.log(removeChar("eloquent"));
+
+//Get the mean of an array
+//https://www.codewars.com/kata/563e320cee5dddcf77000158
+function getAverage(marks) {
+  const sum = marks.reduce((x, y) => x + y);
+
+  return Math.trunc(sum / marks.length);
+}
+
+getAverage([2, 2, 2, 2]);
+
+//Abbreviate a Two Word Name
+//https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3
+function abbrevName(name) {
+  return name
+    .split(" ")
+    .map((x) => x.charAt(0))
+    .join(".");
+}
+
+console.log(abbrevName("David Mendieta"));
+//2^nd method
+function abbrevName2(name) {
+  return name
+    .split(" ")
+    .map((i) => i[0].toUpperCase())
+    .join(".");
+}
+
+console.log(abbrevName2("david Mendieta"));
