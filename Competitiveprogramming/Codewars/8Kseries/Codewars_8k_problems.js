@@ -396,3 +396,42 @@ function abbrevName2(name) {
 }
 
 console.log(abbrevName2("david Mendieta"));
+
+//Count the Monkeys!
+//https://www.codewars.com/kata/56f69d9f9400f508fb000ba7
+
+function monkeyCount(n, emptyarray2d = []) {
+  for (let i = 1; i <= n; i++) {
+    emptyarray2d.push(i);
+  }
+  return emptyarray2d;
+}
+
+console.log(monkeyCount(20));
+
+//Basic Mathematical Operations
+//https://www.codewars.com/kata/57356c55867b9b7a60000bd7
+
+function basicOp(operation, value1, value2) {
+  return (
+    (operation == "+" && value1 + value2) ||
+    (operation == "-" && value1 - value2) ||
+    (operation == "*" && value1 * value2) ||
+    (operation == "/" && value1 / value2)
+  );
+}
+
+console.log(basicOp("/", 49, 7));
+
+function basicOp2d(operation, value1, value2) {
+  const expand = {
+    "+": value1 + value2,
+    "-": value1 - value2,
+    "*": value1 * value2,
+    "/": value1 / value2,
+  };
+
+  return expand[operation];
+}
+
+console.log(basicOp2d("-", 49, 7));
