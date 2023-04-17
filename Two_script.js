@@ -1260,3 +1260,22 @@ let obj = {
 Object.entries(obj).forEach(([key, value]) => {
   console.log(key, value);
 });
+
+//export Object with operations
+function exportObject(operation, array) {
+  const OperationObj = {
+    Min: (a) => Math.min(...a),
+    Max: (a) => Math.max(...a),
+    "Ascending Order": (a) => a.sort((a, b) => (a < b ? -1 : 1)),
+    "Descendiong Order": (a) => a.sort((a, b) => (a > b ? -1 : 1)),
+    SumArray: (a) =>
+      a.reduce((a, b) => {
+        return a + b;
+      }),
+    RemoveDuplicatearray: (a) => [...new Set(a)],
+  };
+
+  return OperationObj[operation](array);
+}
+
+console.log(exportObject("Max", [1, 3, 4, 5, 7, 2, 2]));
