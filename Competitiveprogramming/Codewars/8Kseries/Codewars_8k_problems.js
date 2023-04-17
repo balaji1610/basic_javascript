@@ -435,3 +435,35 @@ function basicOp2d(operation, value1, value2) {
 }
 
 console.log(basicOp2d("-", 49, 7));
+
+//Count of positives / sum of negatives
+//https://www.codewars.com/kata/576bb71bbbcf0951d5000044
+
+function countPositivesSumNegatives(
+  input,
+  postivearray = [],
+  negativearray = []
+) {
+  const expand = input.map((x) =>
+    x > 0 ? postivearray.push(x) : negativearray.push(x)
+  );
+
+  const resultpositivearray = function (x) {
+    return x.length;
+  };
+  const resultnegativearray = function (x) {
+    return x.reduce((a, b) => {
+      return a + b;
+    });
+  };
+  return [
+    resultpositivearray(postivearray),
+    resultnegativearray(negativearray),
+  ];
+}
+
+console.log(
+  countPositivesSumNegatives([
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15,
+  ])
+);
