@@ -467,3 +467,51 @@ console.log(
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15,
   ])
 );
+
+//You only need one - Beginner
+//https://www.codewars.com/kata/57cc975ed542d3148f00015b
+function check(a, x) {
+  return a.includes(x);
+}
+
+console.log(check(["what", "a", "great", "kata"], "kat"));
+
+//pick a set of first elements
+//https://www.codewars.com/kata/572b77262bedd351e9000076
+function first(arr, n) {
+  return arr.slice(0, n);
+}
+
+console.log(first(["a", "b", "c", "d", "e"], 2));
+//Return the day
+//https://www.codewars.com/kata/59dd3ccdded72fc78b000b25
+function whatday(num) {
+  let holidays = {
+    1: "Sunday",
+    2: "Monday",
+    3: "Tuesday",
+    4: "Wednesday",
+    5: "Thursday",
+    6: "Friday",
+    7: "Saturday",
+  };
+
+  return holidays[num] ?? "Wrong, please enter a number between 1 and 7";
+}
+
+console.log(whatday(9));
+
+//Return Negative
+//https://www.codewars.com/kata/55685cd7ad70877c23000102
+function makeNegative(num) {
+  return Math.sign(num) == 1 ? -num : num;
+}
+console.log(makeNegative(0.12));
+
+//Removing Elements
+//https://www.codewars.com/kata/5769b3802ae6f8e4890009d2
+function removeEveryOther(arr) {
+  return arr.filter((elm, i) => (i + 1) % 2 == !0);
+}
+
+console.log(removeEveryOther(["Hello", "Goodbye", "Hello Again"]));
