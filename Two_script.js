@@ -1279,3 +1279,21 @@ function exportObject(operation, array) {
 }
 
 console.log(exportObject("Max", [1, 3, 4, 5, 7, 2, 2]));
+//array remove splice method
+function removeEveryOther(arr, index, removearrayer = []) {
+  for (let i = index - 1; i < arr.length; i += index - 1) {
+    removearrayer.push(arr.splice(i, 1));
+  }
+  console.log(removearrayer.flat(), "REMOVE ARRAY");
+  return arr;
+}
+
+console.log(
+  removeEveryOther(
+    [
+      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+      22, 23, 24, 25, 26, 27, 28, 29, 30,
+    ],
+    2
+  )
+);
