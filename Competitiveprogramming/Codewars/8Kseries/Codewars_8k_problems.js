@@ -515,3 +515,88 @@ function removeEveryOther(arr) {
 }
 
 console.log(removeEveryOther(["Hello", "Goodbye", "Hello Again"]));
+
+//Remove duplicates from list
+//https://www.codewars.com/kata/57a5b0dfcf1fa526bb000118
+function distinct(a) {
+  return [...new Set(a)];
+}
+
+console.log(distinct([1, 1, 2]));
+//Array plus array
+//https://www.codewars.com/kata/5a2be17aee1aaefe2a000151
+function arrayPlusArray(arr1, arr2) {
+  return arr1.concat(arr2).reduce((a, b) => {
+    return a + b;
+  });
+}
+
+console.log(arrayPlusArray([100, 200, 300], [400, 500, 600]));
+//Opposite number
+//https://www.codewars.com/kata/56dec885c54a926dcd001095
+function opposite(number) {
+  return Math.sign(number) == 1 ? -number : Math.abs(number);
+}
+
+console.log(opposite(-14));
+
+//Count by X
+//https://www.codewars.com/kata/5513795bd3fafb56c200049e
+function countBy(x, n, emptyarray = []) {
+  for (let i = 1; i <= n; i++) {
+    emptyarray.push(i * x);
+  }
+  return emptyarray;
+}
+
+console.log(countBy(2, 5));
+
+//Convert a string to an array
+//https://www.codewars.com/kata/57e76bc428d6fbc2d500036d
+function stringToArray(string) {
+  return string.split(" ");
+}
+
+console.log(stringToArray("Robin Singh"));
+//What is between?
+//https://www.codewars.com/kata/55ecd718f46fba02e5000029
+function between(a, b, empyarray = []) {
+  let i = a;
+  while (i <= b) {
+    empyarray.push(i);
+    i++;
+  }
+
+  return empyarray;
+}
+
+console.log(between(-2, 2));
+
+//Convert number to reversed array of digits
+//https://www.codewars.com/kata/5583090cbe83f4fd8c000051
+function digitize(n) {
+  return String(n).split("").reverse().map(Number);
+}
+
+console.log(digitize(35231));
+
+//Short Long Short
+//https://www.codewars.com/kata/50654ddff44f800200000007
+
+function solution(a, b) {
+  if (isNaN(a)) {
+    const Stringresult = [a, b].sort((a, b) => a.length - b.length);
+
+    return Stringresult[0] + Stringresult[1] + Stringresult[0];
+  } else {
+    const Numberresult = [a, b].sort();
+    return Numberresult[0] + Numberresult[1] + Numberresult[0];
+  }
+}
+
+console.log(solution("13", "200"));
+function solution2d(a, b) {
+  return a.length < b.length ? a + b + a : b + a + b;
+}
+
+console.log(solution2d("13", "200"));
