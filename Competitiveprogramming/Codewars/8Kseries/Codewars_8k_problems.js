@@ -557,6 +557,14 @@ function stringToArray(string) {
   return string.split(" ");
 }
 
+//Convert a Number to a String!
+//https://www.codewars.com/kata/5265326f5fda8eb1160004c8
+function numberToString(num) {
+  return num.toString();
+}
+
+console.log(numberToString(123));
+
 console.log(stringToArray("Robin Singh"));
 //What is between?
 //https://www.codewars.com/kata/55ecd718f46fba02e5000029
@@ -600,3 +608,90 @@ function solution2d(a, b) {
 }
 
 console.log(solution2d("13", "200"));
+
+//Sum of positive
+//https://www.codewars.com/kata/5715eaedb436cf5606000381
+function positiveSum(arr) {
+  return arr
+    .filter((x) => Math.sign(x) == 1)
+    .reduce((a, b) => {
+      return a + b;
+    });
+}
+
+console.log(positiveSum([1, -4, 7, 12]));
+//Double Char
+//https://www.codewars.com/kata/56b1f01c247c01db92000076
+function doubleChar(str) {
+  return str
+    .split("")
+    .map((x) => x.repeat(2))
+    .join("");
+}
+
+console.log(doubleChar("123456"));
+//Reversed sequence
+//https://www.codewars.com/kata/5a00e05cc374cb34d100000d
+const reverseSeq = (n, resultarray = []) => {
+  for (let i = n; i > 0; i--) {
+    resultarray.push(i);
+  }
+
+  return resultarray;
+};
+
+console.log(reverseSeq(5));
+
+const reverseSeq2d = (n, resultarrayer = []) => {
+  let i = n;
+  while (i > 0) {
+    resultarrayer.push(i);
+    i--;
+  }
+  return resultarrayer;
+};
+
+console.log(reverseSeq2d(5));
+//Sum Mixed Array
+//https://www.codewars.com/kata/57eaeb9578748ff92a000009
+function sumMix(x) {
+  return x.map(Number).reduce((a, b) => {
+    return a + b;
+  });
+}
+
+console.log(sumMix(["3", 6, 6, 0, "5", 8, 5, "6", 2, "0"]));
+//Merge two sorted arrays into one
+//https://www.codewars.com/kata/5899642f6e1b25935d000161
+function mergeArrays(arr1, arr2) {
+  return [...new Set(arr1.concat(arr2))].sort((a, b) => a - b);
+}
+
+console.log(mergeArrays([1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12]));
+
+//Fake Binary
+//https://www.codewars.com/kata/57eae65a4321032ce000002d
+function fakeBin(x) {
+  return x
+    .split("")
+    .map((x) => (x < 5 ? "0" : "1"))
+    .join("");
+}
+
+console.log(fakeBin("366058562030849490134388085"));
+
+//Sum without highest and lowest number
+//https://www.codewars.com/kata/576b93db1129fcf2200001e6
+function sumArray(array) {
+  const getindex = [
+    array.indexOf(Math.min(...array)),
+    array.indexOf(Math.max(...array)),
+  ];
+
+  return array
+    .map((elm, index) => (getindex.includes(index) ? null : elm))
+    .filter(Number)
+    .reduce((a, b) => a + b);
+}
+
+console.log(sumArray([0, 1, 6, 10, 10]));
