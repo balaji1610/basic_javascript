@@ -701,5 +701,4 @@ console.log(sumArray([0, 1, 6, 10, 10]));
 function reverse(string) {
   return string.split(" ").reverse().join(" ");
 }
-
 console.log(reverse("Hello World"));
