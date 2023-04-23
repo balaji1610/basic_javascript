@@ -148,3 +148,75 @@ function nerdify2d(txt) {
 }
 
 console.log(nerdify2d("Fund4m3nt41s"));
+
+//Vowel one
+//https://www.codewars.com/kata/580751a40b5a777a200000a1
+
+function vowelOne(s) {
+  const vowel = "aeiouAEIOU";
+  return s
+    .split("")
+    .map((x) => (vowel.includes(x) ? 1 : 0))
+    .join("");
+}
+
+console.log(vowelOne("vowelOne"));
+
+//String ends with?
+//https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d
+function solution(str, ending) {
+  return str.slice(-ending.length) === ending;
+}
+
+console.log(solution("abcde", "cde"));
+//2^method
+function solution2d(str, ending) {
+  return str.endsWith(ending);
+}
+
+console.log(solution2d("abc", "d"));
+
+//Greet Me
+//https://www.codewars.com/kata/535474308bb336c9980006f2
+var greet = function (name) {
+  const lower = name.toLowerCase();
+  const string = lower[0].toUpperCase() + lower.slice(1) + "!";
+  return `Hello ${string}`;
+};
+
+console.log(greet("riley"));
+
+//Remove consecutive duplicate words
+//https://www.codewars.com/kata/5b39e91ee7a2c103300018b3
+function removeConsecutiveDuplicates(string, removeDuplicate = []) {
+  const split = string.split(" ");
+
+  for (let i = 0; i < split.length; i++) {
+    if (split[i] != split[i + 1]) {
+      removeDuplicate.push(split[i]);
+    }
+  }
+
+  return removeDuplicate.join(" ");
+}
+
+console.log(
+  removeConsecutiveDuplicates(
+    "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"
+  )
+);
+
+//2nd method
+function removeConsecutiveDuplicates2d(string) {
+  return string
+    .split(" ")
+    .map((elm, i, arr) => (arr[i] != arr[i + 1] ? arr[i] : null))
+    .filter(Boolean)
+    .join(" ");
+}
+
+console.log(
+  removeConsecutiveDuplicates2d(
+    "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"
+  )
+);
