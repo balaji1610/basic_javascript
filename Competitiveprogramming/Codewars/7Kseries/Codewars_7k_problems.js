@@ -220,3 +220,102 @@ console.log(
     "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta"
   )
 );
+//Reverse words
+//https://www.codewars.com/kata/5259b20d6021e9e14c0010d4
+function reverseWords(str) {
+  return str
+    .split(" ")
+    .map((x) => x.split("").reverse("").join(""))
+    .join(" ");
+}
+
+console.log(reverseWords("This is an example!"));
+
+//Descending Order
+//https://www.codewars.com/kata/5467e4d82edf8bbf40000155
+
+function descendingOrder(n) {
+  return String(n)
+    .split("")
+    .sort((a, b) => (a > b ? -1 : 1))
+    .map(Number)
+    .join("");
+}
+
+console.log(descendingOrder(123456789));
+
+//Sum of Minimums!
+//https://www.codewars.com/kata/5d5ee4c35162d9001af7d699
+
+function sumOfMinimums(arr) {
+  return arr.map((x) => Math.min(...x)).reduce((a, b) => a + b);
+}
+
+console.log(
+  sumOfMinimums([
+    [1, 2, 3, 4, 5],
+    [5, 6, 7, 8, 9],
+    [20, 21, 34, 56, 100],
+  ])
+);
+
+//Convert Hash To An Array
+
+//https://www.codewars.com/kata/59557b2a6e595316ab000046
+function convertHashToArray(hash) {
+  return Object.entries(hash).sort();
+}
+
+console.log(convertHashToArray({ product: "CodeWars", powerLevelOver: 9000 }));
+//2^nd method
+function convertHashToArray(hash, emptyarr = []) {
+  for (let i in hash) {
+    emptyarr.push([i, hash[i]]);
+  }
+
+  return emptyarr.sort();
+}
+
+console.log(convertHashToArray({ product: "CodeWars", powerLevelOver: 9000 }));
+
+//You're a square!
+//https://www.codewars.com/kata/54c27a33fb7da0db0100040e
+
+var isSquare = function (n) {
+  return Number.isInteger(Math.sqrt(n));
+};
+
+console.log(isSquare(9));
+
+//
+var isSquare2d = function (n) {
+  return Math.sqrt(n) % 1 === 0;
+};
+
+console.log(isSquare2d(25));
+
+//Frequency sequence
+
+//https://www.codewars.com/kata/585a033e3a36cdc50a00011c
+
+function freqSeq(str, sep, emptyarr12 = []) {
+  str.split("").forEach((x) => {
+    const length = str.split("").filter((a) => a === x).length;
+
+    emptyarr12.push(length);
+  });
+  return emptyarr12.join(sep);
+}
+
+console.log(freqSeq("19999999", ":"));
+
+//
+
+function freqSeq2d(str, sep) {
+  return str
+    .split("")
+    .map((elm, index, array) => array.filter((vi) => vi === elm).length)
+    .join(sep);
+}
+
+console.log(freqSeq2d("hello world", "-"));
