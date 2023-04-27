@@ -319,3 +319,72 @@ function freqSeq2d(str, sep) {
 }
 
 console.log(freqSeq2d("hello world", "-"));
+
+//Shortest Word
+//https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9
+
+function findShort(s) {
+  const res = s.split(" ").map((x) => x.length);
+  return Math.min(...res);
+}
+
+console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
+
+//Highest and Lowest
+//https://www.codewars.com/kata/554b4ac871d6813a03000035
+
+function highAndLow(numbers) {
+  const split = numbers.split(" ");
+  return `${Math.max(...split)} ${Math.min(...split)}`;
+}
+
+console.log(highAndLow("1 2 3 4 5"));
+
+//Vowel Count
+//https://www.codewars.com/kata/54ff3102c1bad923760001f3
+
+function getCount(str) {
+  const vowvel = "aeiouAEIOU";
+  return str
+    .split("")
+    .map((elm) => vowvel.includes(elm))
+    .filter(Boolean).length;
+}
+
+console.log(getCount("abracadabra"));
+
+//List Filtering
+//https://www.codewars.com/kata/53dbd5315a3c69eed20002dd
+function filter_list(l) {
+  // Return a new array with the strings filtered out
+
+  return l.filter((x) => Number.isInteger(x));
+}
+console.log(filter_list([1, 2, "a", "b", "1"]));
+
+function filter_list2d(l) {
+  // Return a new array with the strings filtered out
+
+  return l.map((elm) => typeof elm == "number" && elm).filter(Boolean);
+}
+console.log(filter_list2d([1, 2, "a", "b", "1"]));
+
+//Sort Numbers
+//https://www.codewars.com/kata/5174a4c0f2769dd8b1000003
+
+function solutiondd(numsddf) {
+  return numsddf.sort((a, b) => (a < b ? -1 : 1));
+}
+
+console.log(solutiondd([2, 20, 10]));
+
+//Jaden Casing Strings
+//https://www.codewars.com/kata/5390bac347d09b7da40006f6
+function JadenCase(str) {
+  return str
+    .split(" ")
+    .map((elm) => elm.replace(elm, elm.charAt(0).toUpperCase() + elm.slice(1)))
+    .join(" ");
+}
+
+console.log(JadenCase("How can mirrors be real if our eyes aren't real"));
