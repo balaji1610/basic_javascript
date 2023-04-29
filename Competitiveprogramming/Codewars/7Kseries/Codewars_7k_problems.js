@@ -388,3 +388,30 @@ function JadenCase(str) {
 }
 
 console.log(JadenCase("How can mirrors be real if our eyes aren't real"));
+
+//Count the divisors of a number
+//https://www.codewars.com/kata/542c0f198e077084c0000c2e
+
+function getDivisorsCnt(n, emptyarray = []) {
+  for (let i = 1; i <= 100; i++) {
+    n % i === 0 ? emptyarray.push(i) : null;
+  }
+  return emptyarray.length;
+}
+
+console.log(getDivisorsCnt(30));
+
+//Are the numbers in order?
+//https://www.codewars.com/kata/56b7f2f3f18876033f000307
+
+function inAscOrder(arr) {
+  for (let z = 0; z < arr.length; z++) {
+    if (arr[z] > arr[z + 1]) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+console.log(inAscOrder([1, 2, 3, 4, 5, 7]));
