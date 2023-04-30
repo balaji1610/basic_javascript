@@ -415,3 +415,42 @@ function inAscOrder(arr) {
 }
 
 console.log(inAscOrder([1, 2, 3, 4, 5, 7]));
+
+//Testing 1-2-3
+//https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9
+var number = function (array) {
+  return array.map((elm, index) => `${index + 1} : ${elm}`);
+};
+
+console.log(number(["a", "b", "c"]));
+//Make a function that does arithmetic!
+//https://www.codewars.com/kata/583f158ea20cfcbeb400000a
+function arithmetic(a, b, operator) {
+  let operations = {
+    add: () => a + b,
+    subtract: () => a - b,
+    multiply: () => a * b,
+    divide: () => a / b,
+  };
+
+  return operations[operator]();
+}
+
+console.log(arithmetic(1, 2, "add"));
+//Remove anchor from URL
+//https://www.codewars.com/kata/51f2b4448cadf20ed0000386
+function removeUrlAnchor(url) {
+  let obj = {
+    "#": "#",
+    "/": "/",
+    "?": "?",
+  };
+
+  return url
+    .split("")
+    .map((elm) => elm.replace(obj[elm], " "))
+    .join("")
+    .split(" ")[0];
+}
+
+console.log(removeUrlAnchor("www.codewars.com/katas/?page=1#about"));
