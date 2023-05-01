@@ -454,3 +454,64 @@ function removeUrlAnchor(url) {
 }
 
 console.log(removeUrlAnchor("www.codewars.com/katas/?page=1#about"));
+
+//Friend or Foe?
+//https://www.codewars.com/kata/55b42574ff091733d900002f
+
+function friend(friends) {
+  return friends.filter((elm) => elm.length == 4);
+}
+
+console.log(
+  friend(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"])
+);
+//Two to One
+//https://www.codewars.com/kata/5656b6906de340bd1b0000ac
+
+function longest(s1, s2) {
+  return [...new Set(s1.concat(s2).split(""))].sort().join("");
+}
+
+console.log(longest("inmanylanguages", "theresapairoffunctions"));
+//Sum of two lowest positive integers
+//https://www.codewars.com/kata/558fc85d8fd1938afb000014
+function sumTwoSmallestNumbers(numbers) {
+  return numbers
+    .sort((a, b) => a - b)
+    .slice(0, 2)
+    .reduce((a, b) => a + b);
+}
+
+console.log(sumTwoSmallestNumbers([3, 87, 45, 12, 7]));
+//Odd or Even?
+//https://www.codewars.com/kata/5949481f86420f59480000e7
+
+function oddOrEven(array) {
+  const res = array.reduce((x, y) => x + y);
+  return Math.abs(res) % 2 == 0 ? "EVEN" : "ODD";
+}
+
+console.log(oddOrEven([1023, 1, 3]));
+//Smallest value of an array
+//https://www.codewars.com/kata/544a54fd18b8e06d240005c0
+function min(arr, toReturn) {
+  let result = {
+    value: () => Math.min(...arr),
+    index: () => arr.indexOf(Math.min(...arr)),
+  };
+
+  return result[toReturn]();
+}
+
+console.log(min([8, 2, 3, 4, 5], "value"));
+//Mumbling
+//https://www.codewars.com/kata/5667e8f4e3f572a8f2000039
+function accum(s) {
+  const double = s.split("").map((elm, index) => elm.repeat(index + 1));
+
+  return double
+    .map((elm) => elm.replace(elm.charAt(0), elm.charAt(0).toUpperCase()))
+    .join("-");
+}
+
+console.log(accum("cwAt"));
