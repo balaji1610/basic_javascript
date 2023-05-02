@@ -515,3 +515,65 @@ function accum(s) {
 }
 
 console.log(accum("cwAt"));
+
+//String Merge!
+//https://www.codewars.com/kata/597bb84522bc93b71e00007e
+function stringMerge(string1, string2, letter) {
+  return (
+    string1.slice(0, string1.indexOf(letter)) +
+    string2.slice(string2.indexOf(letter))
+  );
+}
+
+console.log(stringMerge("wonderful", "people", "e"));
+//JavaScript Array Filter
+//https://www.codewars.com/kata/514a6336889283a3d2000001
+function getEvenNumbers(numbersArray) {
+  return numbersArray.filter((elm) => elm % 2 !== 1);
+}
+
+console.log(getEvenNumbers([1, 2, 3, 6, 8, 10]));
+//Lost number in number sequence
+//https://www.codewars.com/kata/595aa94353e43a8746000120
+function findDeletedNumber(arr, mixArr) {
+  const finalResult = arr.filter((elm) => (mixArr.includes(elm) ? 0 : elm));
+
+  return finalResult.length <= 0 ? 0 : finalResult.join("");
+}
+
+console.log(
+  findDeletedNumber([1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 9, 7, 4, 6, 2, 3, 8])
+);
+//Simple consecutive pairs
+//https://www.codewars.com/kata/5a3e1319b6486ac96f000049
+function pairs(ar) {
+  let final = 0;
+
+  for (let i = 0; i < ar.length; i += 2) {
+    if (Math.abs(ar[i] - ar[i + 1]) == 1) {
+      final += 1;
+    } else {
+      final;
+    }
+  }
+
+  return final;
+}
+
+console.log(pairs([73, 72, 8, 9, 73, 72]));
+
+//Return a string's even characters.
+//https://www.codewars.com/kata/566044325f8fddc1c000002c
+function evenChars(string) {
+  const li =
+    string.length > 100
+      ? "invalid string"
+      : string
+          .split("")
+          .map((elm, index) => ((index + 1) % 2 === 0 ? elm : null))
+          .filter(Boolean);
+
+  return li.length == 0 ? "invalid string" : li;
+}
+
+console.log(evenChars("abcdefghijklm"));
