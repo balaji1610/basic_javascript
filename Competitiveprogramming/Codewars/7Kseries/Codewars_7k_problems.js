@@ -577,3 +577,15 @@ function evenChars(string) {
 }
 
 console.log(evenChars("abcdefghijklm"));
+
+//SillyCASE
+//https://www.codewars.com/kata/552ab0a4db0236ff1a00017a
+
+function sillycase(elm) {
+  return (
+    elm.slice(0, Math.round(elm.length / 2)).toLowerCase() +
+    elm.slice(Math.round(elm.length / 2)).toUpperCase()
+  );
+}
+
+console.log(sillycase("foobar"));
