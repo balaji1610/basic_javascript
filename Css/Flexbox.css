@@ -44,3 +44,40 @@
   display: flex;
   flex-wrap: nowrap;
 }
+
+.flexflow {
+  display: flex;
+
+  flex-flow: row-reverse wrap;
+}
+
+.FlexStart {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.flexend {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flexspacearound {
+  display: flex;
+
+  justify-content: space-around;
+}
+
+.flexspacebetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexspaceevenly {
+  display: flex;
+  justify-content: space-evenly;
+}
