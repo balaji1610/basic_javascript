@@ -10,6 +10,7 @@
   background-color: #03a9f4;
 }
 
+/* flexdirction */
 .flexcolumn {
   display: flex;
   flex-direction: column;
@@ -28,4 +29,18 @@
 .flexrowReverse {
   display: flex;
   flex-direction: row-reverse;
+}
+
+/* Flexwrap */
+.flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexwrapreverse {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.flexnowrap {
+  display: flex;
+  flex-wrap: nowrap;
 }
