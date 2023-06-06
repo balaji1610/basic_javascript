@@ -5,7 +5,7 @@
 }
 
 .box {
-  min-height: 120px;
+  min-height: 100px;
   width: 120px;
   background-color: #03a9f4;
 }
@@ -80,4 +80,78 @@
 .flexspaceevenly {
   display: flex;
   justify-content: space-evenly;
+}
+.alignflexstart {
+  display: flex;
+  height: 200px;
+  align-items: flex-start;
+  background-color: red;
+}
+
+.alignflexcenter {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  background-color: red;
+}
+
+.alignflexend {
+  display: flex;
+  height: 200px;
+  align-items: flex-end;
+  background-color: red;
+}
+
+.alignstrech {
+  display: flex;
+  height: 200px;
+  align-items: stretch;
+  background-color: red;
+}
+
+.alignbaseline {
+  display: flex;
+  height: 200px;
+  align-items: baseline;
+  background-color: red;
+}
+
+.aligncolumnflexstart {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: red;
+}
+
+.aligncolumnflexcenter {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+  background-color: red;
+}
+
+.aligncolumnflexend {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: red;
+}
+
+.aligncolumnflexstrech {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: red;
+}
+
+.aligncolbaseline {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  align-items: baseline;
+  background-color: red;
 }
