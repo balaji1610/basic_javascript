@@ -223,3 +223,8 @@
   line-height: 75px;
   font-size: 30px;
 }
+
+.flexshrink {
+  display: flex;
+  background-color: red;
+}
