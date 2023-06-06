@@ -208,3 +208,18 @@
   display: flex;
   justify-content: flex-start;
 }
+
+.flexgrow {
+  display: flex;
+  background-color: red;
+}
+
+.box2 {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
