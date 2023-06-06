@@ -155,3 +155,51 @@
   align-items: baseline;
   background-color: red;
 }
+
+.aligncontensflexstart {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  align-content: flex-start;
+  background-color: red;
+}
+
+.aligncontensflexcenter {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  align-content: center;
+  background-color: red;
+}
+
+.aligncontensflexend {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  align-content: flex-end;
+  background-color: red;
+}
+
+.aligncontensspacebetween {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  align-content: space-between;
+  background-color: red;
+}
+
+.aligncontensspacearound {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  align-content: space-around;
+  background-color: red;
+}
+
+.aligncontenstrech {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  align-content: stretch;
+  background-color: red;
+}
